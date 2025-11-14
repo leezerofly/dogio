@@ -1,0 +1,50 @@
+name: Update Balance Data
+
+on:
+  schedule:
+    # 每10分钟执行一次（UTC时间）
+    - cron: '*/10 * * * *'
+  workflow_dispatch:  # 允许在GitHub Actions页面手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0  # 获取完整历史记录
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Update balance data
+        env:
+          OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
+          OKX_API_SECRET: ${{ secrets.OKX_API_SECRET }}
+          OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
+        run: node update-and-push.js
+      
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+      
+      - name: Commit and push changes
+        run: |
+          git add balance-data.json
+          if git diff --staged --quiet; then
+            echo "没有数据变更，跳过提交"
+          else
+            git commit -m "Auto update balance data - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+            git push
+            echo "✅ 数据已更新并推送到GitHub"
+          fi
+

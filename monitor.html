@@ -407,7 +407,20 @@
             }
         }
 
-        const API_BASE_URL = 'https://dogapi.leezf.top'; 
+        // GitHub Pages 数据源配置
+        // 请将 YOUR_USERNAME 和 YOUR_REPO 替换为你的 GitHub 用户名和仓库名
+        const GITHUB_USERNAME = 'linlin520132';  // 例如: 'leezf'
+        const GITHUB_REPO = 'dogio';          // 例如: 'dogio'
+        const GITHUB_BRANCH = 'refs/heads/main';             // 你的主分支名，通常是 'main' 或 'master'
+        
+        // 使用 raw.githubusercontent.com（推荐，更快）
+        const GITHUB_DATA_URL = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPO}/${GITHUB_BRANCH}/balance-data.json`;
+        
+        // 备用方案：使用 GitHub Pages（如果 raw.githubusercontent.com 被墙）
+        // const GITHUB_DATA_URL = `https://${GITHUB_USERNAME}.github.io/${GITHUB_REPO}/balance-data.json`;
+        
+        // 备用方案：使用 jsDelivr CDN（最快，但可能有延迟）
+        // const GITHUB_DATA_URL = `https://cdn.jsdelivr.net/gh/${GITHUB_USERNAME}/${GITHUB_REPO}@${GITHUB_BRANCH}/balance-data.json`; 
 
         // DOM元素
         const balanceTableBodyLarge = document.getElementById('balance-table-body-large');
@@ -706,32 +719,74 @@
             await performDataRequest();
         }
 
-        // 执行数据请求的通用逻辑
+        // 执行数据请求的通用逻辑（从GitHub读取JSON）
         async function performDataRequest() {
+            let response = null;
             try {
-                const response = await fetch(`${API_BASE_URL}/api/balances`, {
-                    timeout: 10000, // 10秒超时
+                // 检查配置
+                if (GITHUB_USERNAME === 'YOUR_USERNAME' || GITHUB_REPO === 'YOUR_REPO') {
+                    throw new Error('请先配置 GITHUB_USERNAME 和 GITHUB_REPO');
+                }
+                
+                // 添加时间戳防止浏览器缓存
+                const url = `${GITHUB_DATA_URL}?t=${Date.now()}`;
+                
+                console.log('正在从GitHub加载数据:', url);
+                
+                // 创建 AbortController 用于超时控制
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 15000); // 15秒超时
+                
+                response = await fetch(url, {
+                    method: 'GET',
                     headers: {
                         'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    }
+                        'Cache-Control': 'no-cache'
+                    },
+                    signal: controller.signal
                 });
+                
+                clearTimeout(timeoutId); // 清除超时定时器
 
                 if (!response.ok) {
+                    if (response.status === 404) {
+                        throw new Error('数据文件未找到，请确认GitHub仓库和分支名是否正确');
+                    }
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }
 
-                // 处理响应数据
-                handleApiResponse(await response.text());
+                // GitHub返回的是纯JSON，直接解析
+                const jsonData = await response.json();
+                
+                // 验证数据格式
+                if (!jsonData.success || !jsonData.data) {
+                    throw new Error('数据格式错误：缺少 success 或 data 字段');
+                }
+
+                // 处理响应数据（转换为字符串格式以兼容现有处理函数）
+                handleApiResponse(JSON.stringify(jsonData));
 
             } catch (error) {
+                console.error('从GitHub加载数据失败:', error);
+                
+                let errorMessage = error.message;
+                if (error.name === 'AbortError' || error.message.includes('aborted')) {
+                    errorMessage = '请求超时，请检查网络连接';
+                } else if (response && response.status === 404) {
+                    errorMessage = '数据文件未找到，请检查GitHub配置（GITHUB_USERNAME 和 GITHUB_REPO）';
+                } else if (error.message.includes('CORS') || error.message.includes('cross-origin')) {
+                    errorMessage = '跨域请求失败，请使用 raw.githubusercontent.com';
+                }
+                
                 const errorHtml = `
                     <tr>
                         <td colspan="6" class="text-center text-red-400 py-8">
                             <i class="fa fa-exclamation-triangle text-2xl mb-2"></i>
-                            <p class="zh">加载数据失败，请检查后端服务是否正常运行</p>
-                            <p class="en hidden">Failed to load data, please check if the backend service is running</p>
-                            <p class="text-sm mt-2">${error.message}</p>
+                            <p class="zh">加载数据失败</p>
+                            <p class="en hidden">Failed to load data</p>
+                            <p class="text-sm mt-2">${errorMessage}</p>
+                            <p class="text-xs mt-2 text-light/50 zh">提示：请检查 monitor.html 中的 GITHUB_USERNAME 和 GITHUB_REPO 配置</p>
+                            <p class="text-xs mt-2 text-light/50 en hidden">Tip: Please check GITHUB_USERNAME and GITHUB_REPO configuration in monitor.html</p>
                         </td>
                     </tr>
                 `;
