@@ -449,10 +449,10 @@
         ],
         "initialBalanceTotal": 118000000,
         "currentBalances": [
-          120526241.42419
+          120585238.32855529
         ],
-        "totalBalance": 120526241.42419,
-        "percentage": 2.140882562872881
+        "totalBalance": 120585238.32855529,
+        "percentage": 2.190879939453632
       },
       {
         "nickname": "Cassie",
@@ -1351,10 +1351,10 @@
         "initialBalanceTotal": 32641670.4921,
         "currentBalances": [
           17138132.94421987,
-          15660777.963684708
+          0
         ],
-        "totalBalance": 32798910.907904577,
-        "percentage": 0.48171681606378497
+        "totalBalance": 17138132.94421987,
+        "percentage": -47.49615235418888
       },
       {
         "nickname": "天天好心情",
@@ -1717,10 +1717,10 @@
         ],
         "initialBalanceTotal": 22000000,
         "currentBalances": [
-          22351879.394768547
+          0
         ],
-        "totalBalance": 22351879.394768547,
-        "percentage": 1.5994517944024875
+        "totalBalance": 0,
+        "percentage": -100
       },
       {
         "nickname": "静慈",
@@ -1765,10 +1765,10 @@
         ],
         "initialBalanceTotal": 21307781,
         "currentBalances": [
-          21341442.98911645
+          0
         ],
-        "totalBalance": 21341442.98911645,
-        "percentage": 0.15797979675334992
+        "totalBalance": 0,
+        "percentage": -100
       },
       {
         "nickname": "转运丹",
@@ -2027,7 +2027,7 @@
         "percentage": 1.4939186318765614
       }
     ],
-    "lastUpdate": "2025-11-14T17:18:44.765Z",
+    "lastUpdate": "2025-11-14T17:36:37.223Z",
     "totalUsers": 159,
     "totalAddresses": 217
   }
