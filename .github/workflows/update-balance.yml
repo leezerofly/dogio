@@ -9,11 +9,19 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 需要写入权限来推送代码
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0  # 获取完整历史记录
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
       
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -24,17 +32,35 @@ jobs:
       - name: Install dependencies
         run: npm install
       
+      - name: Debug secrets (check if they exist)
+        env:
+          OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
+          OKX_API_SECRET: ${{ secrets.OKX_API_SECRET }}
+          OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
+        run: |
+          echo "Checking secrets..."
+          if [ -z "$OKX_API_KEY" ]; then
+            echo "⚠️ OKX_API_KEY is empty or not set"
+          else
+            echo "✅ OKX_API_KEY is set (length: ${#OKX_API_KEY})"
+          fi
+          if [ -z "$OKX_API_SECRET" ]; then
+            echo "⚠️ OKX_API_SECRET is empty or not set"
+          else
+            echo "✅ OKX_API_SECRET is set (length: ${#OKX_API_SECRET})"
+          fi
+          if [ -z "$OKX_API_PASSPHRASE" ]; then
+            echo "⚠️ OKX_API_PASSPHRASE is empty or not set"
+          else
+            echo "✅ OKX_API_PASSPHRASE is set (length: ${#OKX_API_PASSPHRASE})"
+          fi
+      
       - name: Update balance data
         env:
           OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
           OKX_API_SECRET: ${{ secrets.OKX_API_SECRET }}
           OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
         run: node update-and-push.js
-      
-      - name: Configure Git
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
       
       - name: Commit and push changes
         run: |
