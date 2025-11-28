@@ -708,23 +708,26 @@
         "addresses": [
           "0xfd60cfbfe9223f6a15a5935f27663dcb98f96d7a",
           "0xd7756a84530a750cfd0ccaaac659826a07037f88",
-          "0x8929ace29737b4bcee0b856c358fb78675874434"
+          "0x8929ace29737b4bcee0b856c358fb78675874434",
+          "0x7c05f0c1bba888859e05c995c9f31531088da0eb"
         ],
         "initialBalanceTotal": 110261409,
         "currentBalances": [
           20983556.815132577,
           13050430.119244426,
-          41676.03400560672
+          41676.03400560672,
+          15126147.246666243
         ],
-        "totalBalance": 34075662.968382604,
-        "percentage": 98.22901053273033,
+        "totalBalance": 49201810.21504885,
+        "percentage": 136.31761209530868,
         "lpBalances": [
           0,
           0.5692154906307392,
-          0.22012647523128684
+          0.22012647523128684,
+          0.11496452015384893
         ],
-        "totalLPBalance": 0.789341965862026,
-        "poolDOGHoldings": 184494437.09176427
+        "totalLPBalance": 0.9043064860158749,
+        "poolDOGHoldings": 211365318.59639293
       },
       {
         "nickname": "小柒柒",
@@ -1024,10 +1027,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          87828119.48254019
+          87930352.57720235
         ],
-        "totalBalance": 87828119.48254019,
-        "percentage": 0.9038395046093486,
+        "totalBalance": 87930352.57720235,
+        "percentage": 1.005781631003021,
         "lpBalances": [
           0.05717543000268961
         ],
@@ -2768,18 +2771,18 @@
         "poolDOGHoldings": 0
       }
     ],
-    "lastUpdate": "2025-11-28T15:01:13.920Z",
+    "lastUpdate": "2025-11-28T15:22:42.936Z",
     "totalUsers": 151,
-    "totalAddresses": 217,
+    "totalAddresses": 218,
     "poolStats": {
       "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646",
       "poolDOGReserve": 5346509415.575992,
       "lpTokenSupply": 22.874533883596285,
       "lpTokenSymbol": "Pot-LP",
-      "totalPoolDOGHoldings": 4712048625.86397,
+      "totalPoolDOGHoldings": 4738919507.368599,
       "usersWithPoolHoldings": 87,
-      "unallocatedDOG": 634460789.7120218,
-      "unallocatedPercent": 11.866822638778986
+      "unallocatedDOG": 607589908.2073927,
+      "unallocatedPercent": 11.364235260435535
     }
   }
 }
