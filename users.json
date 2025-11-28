@@ -207,7 +207,8 @@
     {
         "nickname": "沙漠绿洲",
         "addresses": [
-            "0x750f9a6ae2b57e0c3ea9f172fe8e48422d4f1c78"
+            "0x750f9a6ae2b57e0c3ea9f172fe8e48422d4f1c78",
+            "0x6d42ED10e319B544941a345e3Aad989079F258E6"
         ],
         "initialBalanceTotal": 120000000
     },
