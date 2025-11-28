@@ -84,36 +84,7 @@
                 box-shadow: 0 0 25px rgba(108, 92, 231, 0.3);
             }
 
-            /* 前三名特殊效果 */
-            .ranking-modal-item:nth-child(1) {
-                background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.1));
-                border: 1px solid rgba(255, 193, 7, 0.3);
-                box-shadow: 0 0 30px rgba(255, 193, 7, 0.4);
-            }
-
-            .ranking-modal-item:nth-child(1):hover {
-                box-shadow: 0 0 40px rgba(255, 193, 7, 0.6);
-            }
-
-            .ranking-modal-item:nth-child(2) {
-                background: linear-gradient(135deg, rgba(209, 213, 219, 0.1), rgba(156, 163, 175, 0.1));
-                border: 1px solid rgba(209, 213, 219, 0.3);
-                box-shadow: 0 0 25px rgba(209, 213, 219, 0.4);
-            }
-
-            .ranking-modal-item:nth-child(2):hover {
-                box-shadow: 0 0 35px rgba(209, 213, 219, 0.6);
-            }
-
-            .ranking-modal-item:nth-child(3) {
-                background: linear-gradient(135deg, rgba(255, 138, 76, 0.1), rgba(251, 146, 60, 0.1));
-                border: 1px solid rgba(255, 138, 76, 0.3);
-                box-shadow: 0 0 25px rgba(255, 138, 76, 0.4);
-            }
-
-            .ranking-modal-item:nth-child(3):hover {
-                box-shadow: 0 0 35px rgba(255, 138, 76, 0.6);
-            }
+            /* 前三名特殊效果 - 移除默认样式，因为已经在JavaScript中动态设置 */
 
             .modal-backdrop {
                 backdrop-filter: blur(8px);
@@ -190,6 +161,116 @@
             .tab-button:not(.active):hover {
                 color: rgba(226, 232, 240, 0.9);
             }
+
+            /* 排行榜弹窗移动端适配 */
+            @media (max-width: 768px) {
+                /* 弹窗在移动端的全屏显示 */
+                #ranking-modal .flex.items-center.justify-center {
+                    padding: 1rem;
+                }
+
+                #ranking-modal .bg-darker.rounded-2xl {
+                    max-width: 100vw;
+                    max-height: 90vh;
+                    margin: 0;
+                    border-radius: 1rem;
+                }
+
+                /* 弹窗头部移动端优化 */
+                #ranking-modal .flex.items-center.justify-between {
+                    padding: 1rem;
+                }
+
+                #ranking-modal h2 {
+                    font-size: 1.125rem; /* text-lg */
+                }
+
+                #ranking-modal .fa-trophy {
+                    font-size: 1.25rem; /* text-xl */
+                    margin-right: 0.5rem;
+                }
+
+                #ranking-modal .fa-times {
+                    font-size: 1.125rem; /* text-lg */
+                }
+
+                /* 弹窗内容移动端优化 */
+                #ranking-modal .p-6.overflow-y-auto {
+                    padding: 1rem;
+                    max-height: 70vh;
+                }
+
+                /* 排行榜项目移动端优化 */
+                .ranking-modal-item {
+                    padding: 0.75rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                /* 排名图标移动端优化 - 已经在HTML中处理 */
+                /* .ranking-modal-item .flex-shrink-0.w-12.h-12 在HTML中已经设置 */
+
+                /* 贡献金额移动端优化 - 已经在HTML中处理 */
+                /* .ranking-modal-item .text-xl.sm\:text-2xl 在HTML中已经设置 */
+
+                /* 排行榜项目之间的间距优化 */
+                .space-y-1 > .ranking-modal-item {
+                    margin-bottom: 0.25rem;
+                }
+
+                /* 统计信息移动端优化 */
+                .ranking-modal-item + .mb-4 .text-light\/70 {
+                    font-size: 0.875rem;
+                }
+
+                .ranking-modal-item + .mb-4 .text-yellow-300 {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                /* 排行榜项目之间的间距优化 */
+                .space-y-1 > .ranking-modal-item {
+                    margin-bottom: 0.5rem;
+                }
+
+                /* 触摸交互优化 - 增加点击区域 */
+                #ranking-modal-close {
+                    padding: 0.5rem;
+                    margin: -0.5rem;
+                }
+
+                /* 前3名皇冠图标移动端优化 */
+                .ranking-modal-item .text-xl {
+                    font-size: 1.25rem;
+                }
+
+                /* 优化role称号文字在移动端的可读性 */
+                .ranking-modal-item .text-xs.sm\:text-sm {
+                    font-size: 0.8125rem !important; /* 从默认的0.75rem增加到0.8125rem */
+                    line-height: 1.2;
+                }
+            }
+
+            @media (max-width: 480px) {
+                /* 极小屏幕的额外优化 */
+                #ranking-modal .bg-darker.rounded-2xl {
+                    border-radius: 0.75rem;
+                }
+
+                .ranking-modal-item {
+                    padding: 0.5rem;
+                }
+
+                /* 极小屏幕上进一步优化role文字 */
+                .ranking-modal-item .text-xs.sm\:text-sm {
+                    font-size: 0.75rem !important; /* 在极小屏幕上保持0.75rem但优化行高 */
+                    line-height: 1.1;
+                }
+
+                .ranking-modal-item .flex-shrink-0.w-14.h-14 {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+            }
         }
     </style>
 </head>
@@ -251,21 +332,26 @@
             <div class="max-w-6xl mx-auto">
                 <div class="bg-darker rounded-2xl p-6 border border-primary/20">
                     <!-- 统计信息 -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
                         <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
                             <div class="text-sm text-light/60 mb-1 zh">上次更新时间 (UTC+8)</div>
                             <div class="text-sm text-light/60 mb-1 en hidden">Last Update (UTC+8)</div>
                             <div class="text-lg font-bold text-white" id="last-update-time">-</div>
                         </div>
                         <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
-                            <div class="text-sm text-light/60 mb-1 zh">当前深度共识者总人数</div>
+                            <div class="text-sm text-light/60 mb-1 zh">深度共识者总人数</div>
                             <div class="text-sm text-light/60 mb-1 en hidden">Total Deep Consensus Participants</div>
                             <div class="text-lg font-bold text-secondary" id="total-users">-</div>
                         </div>
                         <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
-                            <div class="text-sm text-light/60 mb-1 zh">当前深度共识者总持仓</div>
+                            <div class="text-sm text-light/60 mb-1 zh">深度共识者总持仓（包括池子）</div>
                             <div class="text-sm text-light/60 mb-1 en hidden">Total Deep Consensus Balance</div>
                             <div class="text-lg font-bold text-primary" id="total-balance">-</div>
+                        </div>
+                        <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
+                            <div class="text-sm text-light/60 mb-1 zh">深度共识者总加池子</div>
+                            <div class="text-sm text-light/60 mb-1 en hidden">Total Pool DOG Holdings</div>
+                            <div class="text-lg font-bold text-success" id="total-pool-holdings">-</div>
                         </div>
                     </div>
 
@@ -324,8 +410,8 @@
                                         <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolDOGHoldings" data-tab="large">
                                             <div class="flex items-center">
                                                 <span>
-                                                    <span class="zh">池子DOG持有量</span>
-                                                    <span class="en hidden">Pool DOG Holdings</span>
+                                                    <span class="zh">加池子数量</span>
+                                                    <span class="en hidden">Pool DOG Added Amount</span>
                                                 </span>
                                                 <div class="sort-icons flex flex-col ml-2">
                                                     <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
@@ -336,7 +422,7 @@
                                         <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="totalBalance" data-tab="large">
                                             <div class="flex items-center">
                                                 <span>
-                                                    <span class="zh">当前持仓合计</span>
+                                                    <span class="zh">当前持仓合计（持仓+池子）</span>
                                                     <span class="en hidden">Total Current Balance</span>
                                                 </span>
                                                 <div class="sort-icons flex flex-col ml-2">
@@ -345,7 +431,7 @@
                                                 </div>
                                             </div>
                                         </th>
-                                        <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="initialBalanceTotal" data-tab="large">
+                                        <!-- <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="initialBalanceTotal" data-tab="large">
                                             <div class="flex items-center">
                                                 <span>
                                                     <span class="zh">加入时初始持仓</span>
@@ -356,8 +442,8 @@
                                                     <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
                                                 </div>
                                             </div>
-                                        </th>
-                                        <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="percentage" data-tab="large">
+                                        </th> -->
+                                        <!-- <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="percentage" data-tab="large">
                                             <div class="flex items-center">
                                                 <span>
                                                     <span class="zh">变化百分比</span>
@@ -368,7 +454,7 @@
                                                     <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
                                                 </div>
                                             </div>
-                                        </th>
+                                        </th> -->
                                     </tr>
                                 </thead>
                                 <tbody id="balance-table-body-large">
@@ -405,8 +491,8 @@
                                         <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolDOGHoldings" data-tab="small">
                                             <div class="flex items-center">
                                                 <span>
-                                                    <span class="zh">池子DOG持有量</span>
-                                                    <span class="en hidden">Pool DOG Holdings</span>
+                                                    <span class="zh">加池子数量</span>
+                                                    <span class="en hidden">Added Pool DOG Amount</span>
                                                 </span>
                                                 <div class="sort-icons flex flex-col ml-2">
                                                     <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
@@ -417,8 +503,8 @@
                                         <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="totalBalance" data-tab="small">
                                             <div class="flex items-center">
                                                 <span>
-                                                    <span class="zh">当前持仓合计</span>
-                                                    <span class="en hidden">Total Current Balance</span>
+                                                    <span class="zh">当前持仓合计（持仓+池子）</span>
+                                                    <span class="en hidden">Total Current Balance (Balance + Pool)</span>
                                                 </span>
                                                 <div class="sort-icons flex flex-col ml-2">
                                                     <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
@@ -426,7 +512,7 @@
                                                 </div>
                                             </div>
                                         </th>
-                                        <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="initialBalanceTotal" data-tab="small">
+                                        <!-- <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="initialBalanceTotal" data-tab="small">
                                             <div class="flex items-center">
                                                 <span>
                                                     <span class="zh">加入时初始持仓</span>
@@ -437,8 +523,8 @@
                                                     <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
                                                 </div>
                                             </div>
-                                        </th>
-                                        <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="percentage" data-tab="small">
+                                        </th> -->
+                                        <!-- <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="percentage" data-tab="small">
                                             <div class="flex items-center">
                                                 <span>
                                                     <span class="zh">变化百分比</span>
@@ -449,7 +535,7 @@
                                                     <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
                                                 </div>
                                             </div>
-                                        </th>
+                                        </th> -->
                                     </tr>
                                 </thead>
                                 <tbody id="balance-table-body-small">
@@ -579,6 +665,12 @@
                     return sum + (user.totalBalance || 0) + poolDOGHoldings;
                 }, 0);
                 totalBalanceEl.textContent = Math.round(totalBalance).toLocaleString();
+
+                // 计算并更新总加池子数量
+                const totalPoolHoldings = data.users.reduce((sum, user) => {
+                    return sum + (user.poolDOGHoldings || 0);
+                }, 0);
+                document.getElementById('total-pool-holdings').textContent = Math.round(totalPoolHoldings).toLocaleString();
             }
         }
 
@@ -674,23 +766,28 @@
                 let rankClass = 'text-light/60';
                 let bgClass = 'bg-dark/20';
                 let borderClass = 'border-primary/10';
+                let role = "池子贡献者";
 
                 if (rank === 1) {
                     rankClass = 'text-yellow-400';
-                    bgClass = 'bg-gradient-to-r from-yellow-400/20 to-orange-400/20';
-                    borderClass = 'border-yellow-400/30';
+                    bgClass = 'bg-gradient-to-br from-yellow-400/30 via-orange-400/25 to-red-400/20 shadow-yellow-400/50';
+                    borderClass = 'border-yellow-400/50 shadow-lg shadow-yellow-400/20';
+                    role = "无敌格局榜一大哥";
                 } else if (rank === 2) {
                     rankClass = 'text-gray-300';
-                    bgClass = 'bg-gradient-to-r from-gray-300/20 to-gray-400/20';
-                    borderClass = 'border-gray-300/30';
+                    bgClass = 'bg-gradient-to-br from-gray-300/30 via-slate-400/25 to-zinc-500/20 shadow-gray-300/50';
+                    borderClass = 'border-gray-300/50 shadow-lg shadow-gray-300/20';
+                    role = "榜二巨佬";
                 } else if (rank === 3) {
-                    rankClass = 'text-orange-400';
-                    bgClass = 'bg-gradient-to-r from-orange-400/20 to-red-400/20';
-                    borderClass = 'border-orange-400/30';
+                    rankClass = 'text-amber-600';
+                    bgClass = 'bg-gradient-to-br from-amber-600/20 via-orange-700/15 to-red-800/10 shadow-amber-600/30';
+                    borderClass = 'border-amber-600/30 shadow-md shadow-amber-600/15';
+                    role = "榜三大佬";
                 } else if (isTopTen) {
                     rankClass = 'text-secondary';
                     bgClass = 'bg-gradient-to-r from-secondary/15 to-primary/15';
                     borderClass = 'border-secondary/25';
+                    role = "卓越前十";
                 } else {
                     rankClass = 'text-light/70';
                     bgClass = 'bg-dark/10';
@@ -698,34 +795,33 @@
                 }
 
                 return `
-                    <div class="ranking-modal-item ${bgClass} p-4 mb-3 border ${borderClass} rounded-xl">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center flex-1">
+                    <div class="ranking-modal-item ${bgClass} p-4 border ${borderClass} rounded-xl relative overflow-hidden">
+                        ${isTopThree ? `<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>` : ''}
+                        <div class="flex items-center justify-between relative z-10">
+                            <div class="flex items-center flex-1 min-w-0">
                                 <!-- 排名数字 -->
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full ${rank === 1 ? 'bg-yellow-400/20' : rank === 2 ? 'bg-gray-300/20' : rank === 3 ? 'bg-orange-400/20' : 'bg-primary/10'} flex items-center justify-center mr-4">
-                                    <span class="text-lg font-bold ${rankClass}">${rank}</span>
+                                <div class="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full ${rank === 1 ? 'bg-gradient-to-br from-yellow-400 to-orange-500 shadow-lg shadow-yellow-400/50' : rank === 2 ? 'bg-gradient-to-br from-gray-300 to-slate-400 shadow-lg shadow-gray-300/50' : rank === 3 ? 'bg-gradient-to-br from-orange-400 to-amber-500 shadow-lg shadow-orange-400/50' : 'bg-primary/10'} flex items-center justify-center mr-3 sm:mr-4">
+                                    <span class="text-lg sm:text-xl font-bold ${rankClass} ${isTopThree ? 'drop-shadow-lg' : ''}">${rank === 1 ? '👑' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank}</span>
                                 </div>
 
                                 <!-- 用户信息 -->
-                                <div class="flex-1">
-                                    <div class="font-semibold text-white text-lg">${item.nickname}</div>
-                                    <div class="text-sm text-light/60 zh">池子持有者</div>
-                                    <div class="text-sm text-light/60 en hidden">Pool Holder</div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="font-semibold text-white text-base sm:text-lg ${isTopThree ? 'drop-shadow-sm' : ''} truncate">${item.nickname}</div>
+                                    <div class="text-xs sm:text-sm ${isTopThree ? 'text-yellow-300 font-medium' : 'text-light/60'} zh truncate">${role}</div>
+                                    <div class="text-xs sm:text-sm ${isTopThree ? 'text-yellow-300 font-medium' : 'text-light/60'} en hidden truncate">${role}</div>
                                 </div>
                             </div>
 
                             <!-- 贡献金额 -->
-                            <div class="text-right">
-                                <div class="text-2xl font-bold text-white font-mono mb-1">
+                            <div class="text-right flex-shrink-0 ml-2">
+                                <div class="text-xl sm:text-2xl font-bold ${isTopThree ? 'text-yellow-300 drop-shadow-lg' : 'text-white'} font-mono mb-1">
                                     ${Math.round(item.amount).toLocaleString()}
                                 </div>
-                                <div class="text-sm text-secondary font-medium">DOG</div>
+                                <div class="text-xs sm:text-sm ${isTopThree ? 'text-yellow-200' : 'text-secondary'} font-medium">DOG</div>
                                 ${rank <= 10 ? '<div class="text-xs text-light/50 mt-1">TOP 10</div>' : ''}
+                                ${isTopThree ? '<div class="text-xs text-yellow-300 mt-1 font-bold">⭐ 传奇贡献者 ⭐</div>' : ''}
                             </div>
                         </div>
-
-                        <!-- 前三名底部装饰线 -->
-                        ${isTopThree ? '<div class="mt-3 h-1 bg-gradient-to-r from-transparent via-current to-transparent opacity-60 rounded"></div>' : ''}
                     </div>
                 `;
             }).join('');
@@ -734,6 +830,10 @@
                 <div class="mb-4 text-center">
                     <p class="text-light/70 zh">共 ${rankingData.length} 位贡献者</p>
                     <p class="text-light/70 en hidden">Total ${rankingData.length} contributors</p>
+                </div>
+                <div class="mb-4 text-center">
+                    <p class="text-light/70 zh">总贡献量：<span class="text-yellow-300">${Math.round(rankingData.reduce((sum, item) => sum + item.amount, 0)).toLocaleString()} DOG</span></p>
+                    <p class="text-light/70 en hidden">Total contribution: <span class="text-yellow-300">${Math.round(rankingData.reduce((sum, item) => sum + item.amount, 0)).toLocaleString()} DOG</span></p>
                 </div>
                 <div class="space-y-1">
                     ${rankingHtml}
@@ -1260,8 +1360,8 @@
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${balancesHtml}</td>
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${Math.round(poolDOGHoldings).toLocaleString()}</td>
                         <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(adjustedTotalBalance).toLocaleString()}</td>
-                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.initialBalanceTotal).toLocaleString()}</td>
-                        <td class="py-3 min-w-[100px] w-[120px] align-middle"><span class="${percentageClass}">${percentageIcon}${user.adjustedPercentage.toFixed(2)}%</span></td>
+                        <!-- <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.initialBalanceTotal).toLocaleString()}</td>
+                        <td class="py-3 min-w-[100px] w-[120px] align-middle"><span class="${percentageClass}">${percentageIcon}${user.adjustedPercentage.toFixed(2)}%</span></td> -->
                     </tr>
                 `;
             });
@@ -1272,28 +1372,28 @@
 
     <!-- 排行榜弹窗 -->
     <div id="ranking-modal" class="fixed inset-0 z-50 hidden modal-backdrop">
-        <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="bg-darker rounded-2xl border border-primary/20 max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl">
+        <div class="flex items-center justify-center min-h-screen p-2 sm:p-4">
+            <div class="bg-darker rounded-xl sm:rounded-2xl border border-primary/20 max-w-sm sm:max-w-2xl w-full max-h-[90vh] sm:max-h-[80vh] overflow-hidden shadow-2xl">
                 <!-- 弹窗头部 -->
-                <div class="flex items-center justify-between p-6 border-b border-primary/20">
-                    <h2 class="text-xl font-bold text-white flex items-center">
-                        <i class="fa fa-trophy text-secondary mr-3 text-2xl"></i>
-                        <span class="zh">池子DOG持有量排行榜</span>
-                        <span class="en hidden">Pool DOG Holdings Ranking</span>
+                <div class="flex items-center justify-between p-4 sm:p-6 border-b border-primary/20">
+                    <h2 class="text-lg sm:text-xl font-bold text-white flex items-center">
+                        <i class="fa fa-trophy text-secondary mr-2 sm:mr-3 text-xl sm:text-2xl"></i>
+                        <span class="zh">加池子贡献排行榜</span>
+                        <span class="en hidden">Pool Contribution Ranking</span>
                     </h2>
-                    <button id="ranking-modal-close" class="text-light/60 hover:text-white transition-colors">
-                        <i class="fa fa-times text-xl"></i>
+                    <button id="ranking-modal-close" class="text-light/60 hover:text-white transition-colors p-2 -m-2">
+                        <i class="fa fa-times text-lg sm:text-xl"></i>
                     </button>
                 </div>
 
                 <!-- 弹窗内容 -->
-                <div class="p-6 overflow-y-auto max-h-[60vh]">
+                <div class="p-4 sm:p-6 overflow-y-auto max-h-[70vh] sm:max-h-[60vh]">
                     <div id="ranking-modal-content">
                         <!-- 排行榜内容将通过JavaScript动态生成 -->
-                        <div class="text-center text-light/50 py-8">
-                            <i class="fa fa-spinner fa-spin text-primary text-2xl mb-4"></i>
-                            <p class="zh">加载中...</p>
-                            <p class="en hidden">Loading...</p>
+                        <div class="text-center text-light/50 py-6 sm:py-8">
+                            <i class="fa fa-spinner fa-spin text-primary text-xl sm:text-2xl mb-3 sm:mb-4"></i>
+                            <p class="text-sm sm:text-base zh">加载中...</p>
+                            <p class="text-sm sm:text-base en hidden">Loading...</p>
                         </div>
                     </div>
                 </div>

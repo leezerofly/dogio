@@ -190,7 +190,8 @@
     {
         "nickname": "羽辰",
         "addresses": [
-            "0xf13d79bae5886b189a3c55c0bb81a0dcfdcac8c5"
+            "0xf13d79bae5886b189a3c55c0bb81a0dcfdcac8c5",
+            "0x008065ff70b71e21482d3fab61ffb6df6e0b4a89"
         ],
         "initialBalanceTotal": 131000000
     },
