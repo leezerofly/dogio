@@ -178,7 +178,7 @@
 
                 /* 弹窗头部移动端优化 */
                 #ranking-modal .flex.items-center.justify-between {
-                    padding: 1rem;
+                    padding: .1rem;
                 }
 
                 #ranking-modal h2 {
@@ -225,11 +225,6 @@
                 .ranking-modal-item + .mb-4 .text-yellow-300 {
                     font-size: 1rem;
                     font-weight: 600;
-                }
-
-                /* 排行榜项目之间的间距优化 */
-                .space-y-1 > .ranking-modal-item {
-                    margin-bottom: 0.5rem;
                 }
 
                 /* 触摸交互优化 - 增加点击区域 */
@@ -774,9 +769,9 @@
                     borderClass = 'border-yellow-400/50 shadow-lg shadow-yellow-400/20';
                     role = "无敌格局榜一大哥";
                 } else if (rank === 2) {
-                    rankClass = 'text-gray-300';
-                    bgClass = 'bg-gradient-to-br from-gray-300/30 via-slate-400/25 to-zinc-500/20 shadow-gray-300/50';
-                    borderClass = 'border-gray-300/50 shadow-lg shadow-gray-300/20';
+                    rankClass = 'text-gray-200';
+                    bgClass = 'bg-gradient-to-br from-gray-200/40 via-slate-300/35 to-zinc-400/30 shadow-gray-200/70 shadow-lg';
+                    borderClass = 'border-gray-200/60 shadow-lg shadow-gray-200/30';
                     role = "榜二巨佬";
                 } else if (rank === 3) {
                     rankClass = 'text-amber-600';
@@ -801,7 +796,7 @@
                             <div class="flex items-center flex-1 min-w-0">
                                 <!-- 排名数字 -->
                                 <div class="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full ${rank === 1 ? 'bg-gradient-to-br from-yellow-400 to-orange-500 shadow-lg shadow-yellow-400/50' : rank === 2 ? 'bg-gradient-to-br from-gray-300 to-slate-400 shadow-lg shadow-gray-300/50' : rank === 3 ? 'bg-gradient-to-br from-orange-400 to-amber-500 shadow-lg shadow-orange-400/50' : 'bg-primary/10'} flex items-center justify-center mr-3 sm:mr-4">
-                                    <span class="text-lg sm:text-xl font-bold ${rankClass} ${isTopThree ? 'drop-shadow-lg' : ''}">${rank === 1 ? '👑' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank}</span>
+                                    <span class="text-xl sm:text-2xl font-bold ${rankClass} ${isTopThree ? 'drop-shadow-lg' : ''}">${rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank}</span>
                                 </div>
 
                                 <!-- 用户信息 -->
@@ -814,11 +809,11 @@
 
                             <!-- 贡献金额 -->
                             <div class="text-right flex-shrink-0 ml-2">
-                                <div class="text-xl sm:text-2xl font-bold ${isTopThree ? 'text-yellow-300 drop-shadow-lg' : 'text-white'} font-mono mb-1">
+                                <div class="text-lg sm:text-sm font-bold ${isTopThree ? 'text-yellow-300 drop-shadow-lg' : 'text-white'} font-mono mb-1">
                                     ${Math.round(item.amount).toLocaleString()}
                                 </div>
                                 <div class="text-xs sm:text-sm ${isTopThree ? 'text-yellow-200' : 'text-secondary'} font-medium">DOG</div>
-                                ${rank <= 10 ? '<div class="text-xs text-light/50 mt-1">TOP 10</div>' : ''}
+                                ${rank <= 10 && !isTopThree ? '<div class="text-xs text-light/50 mt-1">TOP 10</div>' : ''}
                                 ${isTopThree ? '<div class="text-xs text-yellow-300 mt-1 font-bold">⭐ 传奇贡献者 ⭐</div>' : ''}
                             </div>
                         </div>

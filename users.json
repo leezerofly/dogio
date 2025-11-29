@@ -379,7 +379,8 @@
     {
         "nickname": "清雅",
         "addresses": [
-            "0x3872db5cf33c46e06385fecbbe06f0808bc580bf"
+            "0x3872db5cf33c46e06385fecbbe06f0808bc580bf",
+            "0xdd405cb98a5bb14727bd5dc0270a955a62c44c7f"
         ],
         "initialBalanceTotal": 101701252
     },
