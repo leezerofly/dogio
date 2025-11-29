@@ -118,10 +118,19 @@
                 </div>
             </div>
             
-            <!-- 语言切换 + 移动端登录/用户信息 -->
+            <!-- 语言切换下拉菜单 + 移动端登录/用户信息 -->
             <div class="flex items-center space-x-4">
-                <button id="lang-zh" class="text-secondary font-medium">中文</button>
-                <button id="lang-en" class="text-light/60 hover:text-secondary transition-colors">English</button>
+                <!-- 语言切换下拉菜单 -->
+                <div class="relative">
+                    <button id="lang-dropdown-btn" class="flex items-center text-secondary font-medium hover:text-white transition-colors">
+                        <span id="current-lang">中文</span>
+                        <i class="fa fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div id="lang-dropdown" class="absolute top-full left-0 mt-1 bg-dark/95 backdrop-blur-sm border border-primary/20 rounded-lg shadow-lg py-1 min-w-[80px] hidden z-50">
+                        <button id="lang-zh" class="block w-full text-left px-3 py-2 text-sm text-secondary hover:bg-primary/10 hover:text-white transition-colors">中文</button>
+                        <button id="lang-en" class="block w-full text-left px-3 py-2 text-sm text-light/60 hover:bg-primary/10 hover:text-white transition-colors">English</button>
+                    </div>
+                </div>
                 
                 <!-- 移动端登录按钮 -->
                 <button id="mobile-login-btn" class="md:hidden text-secondary">
@@ -879,23 +888,36 @@
             mobileMenu.classList.toggle('hidden');
         });
         
-        // 语言切换功能
+        // 语言切换下拉菜单功能
+        const langDropdownBtn = document.getElementById('lang-dropdown-btn');
+        const langDropdown = document.getElementById('lang-dropdown');
+        const currentLangSpan = document.getElementById('current-lang');
+
+        // 切换下拉菜单显示/隐藏
+        langDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            langDropdown.classList.toggle('hidden');
+        });
+
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function() {
+            langDropdown.classList.add('hidden');
+        });
+
+        // 中文切换
         document.getElementById('lang-zh').addEventListener('click', function() {
             document.querySelectorAll('.zh').forEach(el => el.classList.remove('hidden'));
             document.querySelectorAll('.en').forEach(el => el.classList.add('hidden'));
-            document.getElementById('lang-zh').classList.add('text-secondary');
-            document.getElementById('lang-zh').classList.remove('text-light/60');
-            document.getElementById('lang-en').classList.remove('text-secondary');
-            document.getElementById('lang-en').classList.add('text-light/60');
+            currentLangSpan.textContent = '中文';
+            langDropdown.classList.add('hidden');
         });
-        
+
+        // 英文切换
         document.getElementById('lang-en').addEventListener('click', function() {
             document.querySelectorAll('.en').forEach(el => el.classList.remove('hidden'));
             document.querySelectorAll('.zh').forEach(el => el.classList.add('hidden'));
-            document.getElementById('lang-en').classList.add('text-secondary');
-            document.getElementById('lang-en').classList.remove('text-light/60');
-            document.getElementById('lang-zh').classList.remove('text-secondary');
-            document.getElementById('lang-zh').classList.add('text-light/60');
+            currentLangSpan.textContent = 'English';
+            langDropdown.classList.add('hidden');
         });
         
         // 平滑滚动
