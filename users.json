@@ -102,31 +102,12 @@
         "initialBalanceTotal": 243000000
     },
     {
-        "nickname": "Zhong-zheng Cai",
-        "addresses": [
-            "0x505998fc8685186a200c7a56c2aaf87584b14508"
-        ],
-        "initialBalanceTotal": 220222945.44
-    },
-    {
         "nickname": "2025国泰民安",
         "addresses": [
             "0x359ba4ff0efab569ed1c65d2bd69d08e4aa67a88",
             "0x6050df3e868d6baea660f6c0ad49930bc5ad66c3"
         ],
         "initialBalanceTotal": 205343380
-    },
-    {
-        "nickname": "屁屁",
-        "addresses": [
-            "0x249a3bb394aecb6c73b799f86ab297d24b9a3194",
-            "0x5cb50aff7357c71665eaa8b28fefcc9a32dabd69",
-            "0xb1ed284b6759b23b375688dcb8471fcd94cf4450",
-            "0x1cc19ee7f40d2b9204e6d527adf89baf7fb091af",
-            "0x26e3a3381d17bc002e28282253b9a46bef9e138e",
-            "0xf335291deacc922f3ceacdcf3403e878f3b1b851"
-        ],
-        "initialBalanceTotal": 200000000
     },
     {
         "nickname": "焚石",
@@ -293,13 +274,6 @@
         "initialBalanceTotal": 110261409
     },
     {
-        "nickname": "小柒柒",
-        "addresses": [
-            "0xe996c541b6aefb38c6c055d89077cfab527a1d34"
-        ],
-        "initialBalanceTotal": 110000000
-    },
-    {
         "nickname": "郁姐",
         "addresses": [
             "0x953525b75b33aa0c5fffb743e1dcfad1cdfaa956"
@@ -400,15 +374,6 @@
             "0x67c1103a967f3150d1fa5e3d70dae8e70c713950"
         ],
         "initialBalanceTotal": 101000000
-    },
-    {
-        "nickname": "代号火麒麟",
-        "addresses": [
-            "0x59222e6e3b8d0e713c55731f83bff0455e70050c",
-            "0x763b103af34571e6d8fce69d96189b12688a85c2",
-            "0xe4458dd49b3adda2a784228279f7486b88c97fac"
-        ],
-        "initialBalanceTotal": 100800000
     },
     {
         "nickname": "赢在选择",
