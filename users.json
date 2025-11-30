@@ -1073,7 +1073,8 @@
     {
         "nickname": "逗霸",
         "addresses": [
-            "0x0588f6F728635BA9FB0DCB8eF1C01aB5A56f801c"
+            "0x0588f6F728635BA9FB0DCB8eF1C01aB5A56f801c",
+            "0x4a99ed0d8e8cfd6149a0d22233be0d5bea0fba6a"
         ],
         "initialBalanceTotal": 20071225
     },
