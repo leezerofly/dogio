@@ -60,15 +60,15 @@
         ],
         "initialBalanceTotal": 626317899.6,
         "currentBalances": [
-          506395925.8657993
+          0
         ],
-        "totalBalance": 506395925.8657993,
-        "percentage": 0.869144200349167,
+        "totalBalance": 0,
+        "percentage": -100,
         "lpBalances": [
-          0.5055642564386714
+          0
         ],
-        "totalLPBalance": 0.5055642564386714,
-        "poolDOGHoldings": 125365579.43432286
+        "totalLPBalance": 0,
+        "poolDOGHoldings": 0
       },
       {
         "nickname": "小狗旺旺",
@@ -80,11 +80,11 @@
         "initialBalanceTotal": 483285115,
         "currentBalances": [
           130784357.36870477,
-          49612959.44134403,
+          49637358.02631703,
           14818016.63250104
         ],
-        "totalBalance": 195215333.44254982,
-        "percentage": -13.883908898014862,
+        "totalBalance": 195239732.02752283,
+        "percentage": -13.87886041126951,
         "lpBalances": [
           0.1093405099955711,
           0.4430677285320835,
@@ -280,11 +280,11 @@
         ],
         "initialBalanceTotal": 200000000,
         "currentBalances": [
-          50259087.09722379,
+          50283803.433862746,
           27039430.227888335
         ],
-        "totalBalance": 77298517.32511212,
-        "percentage": 29.59644517492533,
+        "totalBalance": 77323233.66175108,
+        "percentage": 29.608803343244787,
         "lpBalances": [
           0,
           0.733529042529623
@@ -642,11 +642,11 @@
         ],
         "initialBalanceTotal": 111491843,
         "currentBalances": [
-          5436814.4377222,
-          6588476.483204814
+          5439488.145973732,
+          6591716.554047759
         ],
-        "totalBalance": 12025290.920927014,
-        "percentage": 0.8392366125605878,
+        "totalBalance": 12031204.70002149,
+        "percentage": 0.8445408383544628,
         "lpBalances": [
           0.2436168484776376,
           0.16127722388381294
@@ -784,10 +784,10 @@
         ],
         "initialBalanceTotal": 106600002,
         "currentBalances": [
-          83569101.38582115
+          83610198.87011231
         ],
-        "totalBalance": 83569101.38582115,
-        "percentage": -1.6043176502364591,
+        "totalBalance": 83610198.87011231,
+        "percentage": -1.565764663819849,
         "lpBalances": [
           0.08598040118385668
         ],
@@ -959,11 +959,11 @@
         ],
         "initialBalanceTotal": 100177579,
         "currentBalances": [
-          34686285.357727304,
+          34703343.325851515,
           32183214.09548599
         ],
-        "totalBalance": 66869499.45321329,
-        "percentage": 1.0269767873530733,
+        "totalBalance": 66886557.4213375,
+        "percentage": 1.044004517803827,
         "lpBalances": [
           0.033598757370271994,
           0.10487225914591232
@@ -1035,10 +1035,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          94521611.70170388
+          94568095.39469172
         ],
-        "totalBalance": 94521611.70170388,
-        "percentage": 4.51451379998231,
+        "totalBalance": 94568095.39469172,
+        "percentage": 4.560997492970154,
         "lpBalances": [
           0.04029857431183711
         ],
@@ -1207,10 +1207,10 @@
         ],
         "initialBalanceTotal": 90000000,
         "currentBalances": [
-          91981061.86680618
+          92026296.17209929
         ],
-        "totalBalance": 91981061.86680618,
-        "percentage": 2.2011798520068657,
+        "totalBalance": 92026296.17209929,
+        "percentage": 2.251440191221436,
         "lpBalances": [
           0
         ],
@@ -2688,7 +2688,7 @@
         "poolDOGHoldings": 0
       }
     ],
-    "lastUpdate": "2025-11-30T17:17:06.513Z",
+    "lastUpdate": "2025-11-30T17:36:10.298Z",
     "totalUsers": 147,
     "totalAddresses": 209,
     "poolStats": {
@@ -2696,10 +2696,10 @@
       "poolDOGReserve": 6512613170.417223,
       "lpTokenSupply": 26.263544186780518,
       "lpTokenSymbol": "Pot-LP",
-      "totalPoolDOGHoldings": 5739009091.371234,
-      "usersWithPoolHoldings": 90,
-      "unallocatedDOG": 773604079.045989,
-      "unallocatedPercent": 11.878551033247211
+      "totalPoolDOGHoldings": 5613643511.936912,
+      "usersWithPoolHoldings": 89,
+      "unallocatedDOG": 898969658.4803114,
+      "unallocatedPercent": 13.803516882651268
     }
   }
 }
