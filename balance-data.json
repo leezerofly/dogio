@@ -2506,10 +2506,10 @@
         ],
         "initialBalanceTotal": 20184078,
         "currentBalances": [
-          20533907.30140115
+          20544005.43478731
         ],
-        "totalBalance": 20533907.30140115,
-        "percentage": 1.7331943594408892,
+        "totalBalance": 20544005.43478731,
+        "percentage": 1.783224553468881,
         "lpBalances": [
           0
         ],
@@ -2688,7 +2688,7 @@
         "poolDOGHoldings": 0
       }
     ],
-    "lastUpdate": "2025-11-30T18:24:10.083Z",
+    "lastUpdate": "2025-11-30T18:48:37.087Z",
     "totalUsers": 147,
     "totalAddresses": 209,
     "poolStats": {
