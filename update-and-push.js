@@ -164,8 +164,8 @@ async function updateAllBalances() {
         const addressBalances = [];
         const addressLPBalances = [];
 
-        // 为每个用户的每个地址获取余额
-        for (let j = 0; j < user.addresses.length; j++) {
+        // 为每个用户的公开地址获取余额（用于显示和统计）
+        for (let j = 0; j < (user.addresses || []).length; j++) {
             const address = user.addresses[j];
             console.log(`正在获取 ${user.nickname} (${address.slice(0, 6)}...${address.slice(-4)}) 的余额...`);
 
@@ -184,8 +184,33 @@ async function updateAllBalances() {
                 userPoolDOGHoldings += addressPoolHoldings;
             }
 
-            // 请求结束后等待1秒再开始下一个请求（除了最后一个地址）
+            // 请求结束后等待1秒再开始下一个请求
             if (j < user.addresses.length - 1 || i < users.length - 1) {
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+        }
+
+        // 为私有地址获取余额（只用于池子统计，不计入显示余额）
+        for (let j = 0; j < (user.privateAddresses || []).length; j++) {
+            const address = user.privateAddresses[j];
+            console.log(`正在获取 ${user.nickname} 私有地址 (${address.slice(0, 6)}...${address.slice(-4)}) 的余额...`);
+
+            const balanceData = await getAddressBalances(address);
+            const dogBalance = balanceData.dogBalance || 0;
+            const lpBalance = balanceData.lpBalance || 0;
+
+            // 私有地址的DOG余额不计入显示总和，只用于池子计算
+            // totalDOGBalance += dogBalance;  // 注释掉，不计入显示总和
+            totalLPBalance += lpBalance;
+
+            // 计算该地址在池子中的DOG持有量
+            if (lpBalance > 0) {
+                const addressPoolHoldings = (lpBalance / poolData.lpTokenInfo.maxSupply) * poolData.poolDOGReserve;
+                userPoolDOGHoldings += addressPoolHoldings;
+            }
+
+            // 请求结束后等待1秒再开始下一个请求（除了最后一个私有地址）
+            if (j < user.privateAddresses.length - 1 || i < users.length - 1) {
                 await new Promise(resolve => setTimeout(resolve, 1000));
             }
         }
@@ -222,7 +247,7 @@ async function updateAllBalances() {
     }
 
     const lastUpdateTime = new Date().toISOString();
-    const totalAddresses = updatedUsers.reduce((sum, user) => sum + user.addresses.length, 0);
+    const totalAddresses = updatedUsers.reduce((sum, user) => sum + ((user.addresses || []).length + (user.privateAddresses || []).length), 0);
 
     // 计算未分配的DOG量
     const unallocatedDOG = poolData.poolDOGReserve - totalPoolDOGHoldings;

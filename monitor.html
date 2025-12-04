@@ -1052,8 +1052,8 @@
             const filterUser = (user) => {
                 // 搜索昵称
                 const nicknameMatch = user.nickname && user.nickname.toLowerCase().includes(searchKeyword);
-                // 搜索地址
-                const addressMatch = user.addresses && user.addresses.some(addr => 
+                // 搜索地址（只搜索addresses数组，不搜索privateAddresses）
+                const addressMatch = user.addresses && user.addresses.some(addr =>
                     addr && addr.toLowerCase().includes(searchKeyword)
                 );
                 return nicknameMatch || addressMatch;
@@ -1180,6 +1180,11 @@
                     const threshold = 100000000; // 1亿
 
                     // 将用户数据分成两组（基于包含池子DOG的总持仓）
+                    // 合并addresses和privateAddresses用于统计计算
+                    allUsers.forEach(user => {
+                        user.allAddresses = [...(user.addresses || []), ...(user.privateAddresses || [])];
+                    });
+
                     usersLarge = allUsers.filter(user => {
                         const totalWithPool = (user.totalBalance || 0) + (user.poolDOGHoldings || 0);
                         return totalWithPool >= threshold;
