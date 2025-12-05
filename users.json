@@ -672,7 +672,8 @@
     {
         "nickname": "城市/ht 日记",
         "addresses": [
-            "0x751c303562ec9b4d9b7e9f90cd94506e40b0d62a"
+            "0x751c303562ec9b4d9b7e9f90cd94506e40b0d62a",
+            "0x1e435da43375a4ed8e72a8c3f8154e01ace90652"
         ],
         "initialBalanceTotal": 36577296
     },
