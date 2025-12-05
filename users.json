@@ -1096,5 +1096,19 @@
             "0xcD2a576218a86e0B9B5956D35A82f4909160BaB7"
         ],
         "initialBalanceTotal": 21373976.9876
+    },
+    {
+        "nickname": "魔虫",
+        "addresses": [
+            "0x2a5e034c80671b622cc3cf3c1fe4f08c00f36c48"
+        ],
+        "initialBalanceTotal": 50000000
+    },
+    {
+        "nickname": "max",
+        "addresses": [
+            "0xcb391641a76379fc6ddd843f98dfa0c98b811409"
+        ],
+        "initialBalanceTotal": 40000000
     }
 ]
