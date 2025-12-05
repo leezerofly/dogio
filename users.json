@@ -1110,5 +1110,12 @@
             "0xcb391641a76379fc6ddd843f98dfa0c98b811409"
         ],
         "initialBalanceTotal": 40000000
+    },
+    {
+        "nickname": "太阳",
+        "addresses": [
+            "0x834510aa808c4f58bc0611667fa2ea803e8bee2a"
+        ],
+        "initialBalanceTotal": 90000000
     }
 ]
