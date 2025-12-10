@@ -434,6 +434,18 @@
                                                 </div>
                                             </div>
                                         </th>
+                                        <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolRatio" data-tab="large">
+                                            <div class="flex items-center">
+                                                <span>
+                                                    <span class="zh">加池子占比</span>
+                                                    <span class="en hidden">Pool Ratio</span>
+                                                </span>
+                                                <div class="sort-icons flex flex-col ml-2">
+                                                    <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
+                                                    <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
                                         <!-- <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="initialBalanceTotal" data-tab="large">
                                             <div class="flex items-center">
                                                 <span>
@@ -462,7 +474,7 @@
                                 </thead>
                                 <tbody id="balance-table-body-large">
                                     <tr>
-                                        <td colspan="7" class="text-center text-light/50 py-8">
+                                        <td colspan="8" class="text-center text-light/50 py-8">
                                             <i class="fa fa-info-circle text-2xl mb-2"></i>
                                             <p class="zh">暂无用户数据</p>
                                             <p class="en hidden">No user data available</p>
@@ -515,6 +527,18 @@
                                                 </div>
                                             </div>
                                         </th>
+                                        <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolRatio" data-tab="small">
+                                            <div class="flex items-center">
+                                                <span>
+                                                    <span class="zh">加池子占比</span>
+                                                    <span class="en hidden">Pool Ratio</span>
+                                                </span>
+                                                <div class="sort-icons flex flex-col ml-2">
+                                                    <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
+                                                    <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
                                         <!-- <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="initialBalanceTotal" data-tab="small">
                                             <div class="flex items-center">
                                                 <span>
@@ -543,7 +567,7 @@
                                 </thead>
                                 <tbody id="balance-table-body-small">
                                     <tr>
-                                        <td colspan="7" class="text-center text-light/50 py-8">
+                                        <td colspan="8" class="text-center text-light/50 py-8">
                                             <i class="fa fa-info-circle text-2xl mb-2"></i>
                                             <p class="zh">暂无用户数据</p>
                                             <p class="en hidden">No user data available</p>
@@ -1017,6 +1041,14 @@
                         const poolDOGHoldingsB = b.poolDOGHoldings || 0;
                         aValue = (a.totalBalance || 0) + poolDOGHoldingsA;
                         bValue = (b.totalBalance || 0) + poolDOGHoldingsB;
+                    } else if (state.field === 'poolRatio') {
+                        // 池子占比：加池子数量 / 总持仓 * 100
+                        const poolDOGHoldingsA = a.poolDOGHoldings || 0;
+                        const poolDOGHoldingsB = b.poolDOGHoldings || 0;
+                        const totalBalanceA = (a.totalBalance || 0) + poolDOGHoldingsA;
+                        const totalBalanceB = (b.totalBalance || 0) + poolDOGHoldingsB;
+                        aValue = totalBalanceA > 0 ? (poolDOGHoldingsA / totalBalanceA) * 100 : 0;
+                        bValue = totalBalanceB > 0 ? (poolDOGHoldingsB / totalBalanceB) * 100 : 0;
                     } else {
                         aValue = a[state.field];
                         bValue = b[state.field];
@@ -1362,6 +1394,9 @@
                 // 重新计算当前持仓合计（包含池子中的DOG数量）
                 const adjustedTotalBalance = user.totalBalance + poolDOGHoldings;
 
+                // 计算池子占比
+                const poolRatio = adjustedTotalBalance > 0 ? (poolDOGHoldings / adjustedTotalBalance) * 100 : 0;
+
                 // 百分比样式
                 let percentageClass = 'text-light/70';
                 let percentageIcon = '';
@@ -1381,6 +1416,7 @@
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${balancesHtml}</td>
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${Math.round(poolDOGHoldings).toLocaleString()}</td>
                         <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(adjustedTotalBalance).toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono min-w-[100px] w-[120px] align-middle">${poolRatio.toFixed(1)}%</td>
                         <!-- <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.initialBalanceTotal).toLocaleString()}</td>
                         <td class="py-3 min-w-[100px] w-[120px] align-middle"><span class="${percentageClass}">${percentageIcon}${user.adjustedPercentage.toFixed(2)}%</span></td> -->
                     </tr>
