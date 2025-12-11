@@ -1089,5 +1089,13 @@
             "0x834510aa808c4f58bc0611667fa2ea803e8bee2a"
         ],
         "initialBalanceTotal": 90000000
+    },
+    {
+        "nickname": "风雨同舟",
+        "addresses": [
+            "0x7c9657ad56861e44E7531601c0689C8ffDcb59b9",
+            "0x39Ac354FD4c6115dEb72263ED44a31a9eACC0C9F"
+        ],
+        "initialBalanceTotal": 0
     }
 ]
