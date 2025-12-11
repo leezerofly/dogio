@@ -168,5 +168,33 @@
             "0xe4458dd49b3adda2a784228279f7486b88c97fac"
         ],
         "initialBalanceTotal": 100800000
+    },
+    {
+        "nickname": "時來運轉^",
+        "addresses": [
+            "0xe004f6435d8e223917c2bf6a86b8cf9b19847aec"
+        ],
+        "initialBalanceTotal": 402843191.4623
+    },
+    {
+        "nickname": "努力赚钱",
+        "addresses": [
+            "0x4ec33e28f1e191920e61b246eA9bf635934a05Da"
+        ],
+        "initialBalanceTotal": 149000000
+    },
+    {
+        "nickname": "jasper",
+        "addresses": [
+            "0x550b64e50f7df0179916082171f034450ee05edb"
+        ],
+        "initialBalanceTotal": 108130301.14
+    },
+    {
+        "nickname": "一個太陽",
+        "addresses": [
+            "0x7CFA1595d6a8d6E3Ee4c56f51dC5432a0B5Ae0F5"
+        ],
+        "initialBalanceTotal": 107264302.27
     }
 ]
