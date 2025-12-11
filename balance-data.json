@@ -2700,20 +2700,40 @@
         ],
         "totalLPBalance": 0.1872902945419228,
         "poolDOGHoldings": 38106788.225140154
+      },
+      {
+        "nickname": "M丶張",
+        "addresses": [
+          "0x66db43f3672dee8629f042e08c639efd9de4dd0d",
+          "0xb8558cc872b20c271e4025972c54fc76efd542b8"
+        ],
+        "initialBalanceTotal": 0,
+        "currentBalances": [
+          2233898.795162511,
+          193106.56022634413
+        ],
+        "totalBalance": 2427005.355388855,
+        "percentage": 0,
+        "lpBalances": [
+          0.06694431287921951,
+          0.06423075811621129
+        ],
+        "totalLPBalance": 0.1311750709954308,
+        "poolDOGHoldings": 26689373.643553708
       }
     ],
-    "lastUpdate": "2025-12-11T07:59:02.641Z",
-    "totalUsers": 147,
-    "totalAddresses": 215,
+    "lastUpdate": "2025-12-11T08:27:01.116Z",
+    "totalUsers": 148,
+    "totalAddresses": 217,
     "poolStats": {
       "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646",
       "poolDOGReserve": 10054761820.262863,
       "lpTokenSupply": 49.41794862741901,
       "lpTokenSymbol": "Pot-LP",
-      "totalPoolDOGHoldings": 6724635633.560565,
-      "usersWithPoolHoldings": 100,
-      "unallocatedDOG": 3330126186.702298,
-      "unallocatedPercent": 33.11989131349944
+      "totalPoolDOGHoldings": 6751325007.204119,
+      "usersWithPoolHoldings": 101,
+      "unallocatedDOG": 3303436813.0587444,
+      "unallocatedPercent": 32.85445117557625
     }
   }
 }
