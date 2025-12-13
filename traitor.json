@@ -196,5 +196,21 @@
             "0x7CFA1595d6a8d6E3Ee4c56f51dC5432a0B5Ae0F5"
         ],
         "initialBalanceTotal": 107264302.27
+    },
+    {
+        "nickname": "老铁Bro",
+        "addresses": [
+            "0x49c7824ff4a75b549bf4a8d3bf5e3abc75eb17e8",
+            "0x527dc9447633c70f4b7efab861af1853ccfdc69b",
+            "0xbf85c69edd38d1272d951f3aca6fcfbb86ba1af0",
+            "0x4f0fdaadae3551f7236c9dc2042676a04a368cac",
+            "0x9cbdd9ef08f24e74d75684afd19c8bf132c2a966"
+        ],
+        "privateAddresses": [
+            "0x402b9260ceb519d144febb0da8f595a914818add",
+            "0x4fb31aee6cee1d695b1cf41cbb3f9b6e86f56d88",
+            "0x9a7fca1655da0d3c70b74ddeae4c4255681a7d2a"
+        ],
+        "initialBalanceTotal": 107990248
     }
 ]
