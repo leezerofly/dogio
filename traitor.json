@@ -212,5 +212,119 @@
             "0x9a7fca1655da0d3c70b74ddeae4c4255681a7d2a"
         ],
         "initialBalanceTotal": 107990248
+    },
+    {
+        "nickname": "黄药师",
+        "addresses": [
+            "0xcc70a7c49ac0a27ed3324ca9baa397c0ae1c1887"
+        ],
+        "initialBalanceTotal": 159285728
+    },
+    {
+        "nickname": "小K",
+        "addresses": [
+            "0x4a43d690bd6111c4fc819bd537b2e3e5f21a385e"
+        ],
+        "initialBalanceTotal": 106896928
+    },
+    {
+        "nickname": "max",
+        "addresses": [
+            "0xf74b48963280acbf44f2c34a920d364e3e790fb1"
+        ],
+        "initialBalanceTotal": 57220000
+    },
+    {
+        "nickname": "max",
+        "addresses": [
+            "0xcb391641a76379fc6ddd843f98dfa0c98b811409"
+        ],
+        "initialBalanceTotal": 40000000
+    },
+    {
+        "nickname": "时迁",
+        "addresses": [
+            "0x48C2EBf1BE893edc50436065eE1C14c266195A7f"
+        ],
+        "initialBalanceTotal": 40000000
+    },
+    {
+        "nickname": "小财宝",
+        "addresses": [
+            "0x0ed0d8bd7b8dba9da5d210c6990a13e8cca7f3d7"
+        ],
+        "initialBalanceTotal": 29000000
+    },
+    {
+        "nickname": "星辰大海",
+        "addresses": [
+            "0xd4Cb277D9Ac31908fbA1cdce2f6Ae956759b0266"
+        ],
+        "initialBalanceTotal": 22926678
+    },
+    {
+        "nickname": "啊真",
+        "addresses": [
+            "0x327a7b7d6fb90acb120b8153fb9011722e8bf1c6"
+        ],
+        "initialBalanceTotal": 20533334
+    },
+    {
+        "nickname": "树藤与海岛",
+        "addresses": [
+            "0x5eb69c55008008538fd1c9d541679d013fb04a9a"
+        ],
+        "initialBalanceTotal": 354034708
+    },
+    {
+        "nickname": "Cassie",
+        "addresses": [
+            "0xa5ba4477a52c2be6f3b3795a1b7fba00cd365df0"
+        ],
+        "initialBalanceTotal": 116268461
+    },
+    {
+        "nickname": "勇哥",
+        "addresses": [
+            "0x2EBF1A9bF511335A3E6935f8492cA00716Ca532f"
+        ],
+        "initialBalanceTotal": 26432943.43794717
+    },
+    {
+        "nickname": "Nayo",
+        "addresses": [
+            "0x602860831839d07a5238206853bdafe95d187fc7",
+            "0x0721014678a4ad1bb8d07e244236542ec05056fc"
+        ],
+        "initialBalanceTotal": 33760446
+    },
+    {
+        "nickname": "海纳百川",
+        "addresses": [
+            "0xFeaF3B125Ec4d8d905Cd4Ba53d3Cde34071cb505"
+        ],
+        "initialBalanceTotal": 40260000
+    },
+    {
+        "nickname": "u哥哥",
+        "addresses": [
+            "0x37f3f874c1aa4435d059ddc6a7fb81e8dd1cfd57",
+            "0x8b8723c57c708c142713eac92e0033ddc8bb3da4"
+        ],
+        "initialBalanceTotal": 27000000
+    },
+    {
+        "nickname": "小满",
+        "addresses": [
+            "0x32119297c4555fbe5370a1f529c13c7cdd6634e7"
+        ],
+        "initialBalanceTotal": 41920277.028529
+    },
+    {
+        "nickname": "27623",
+        "addresses": [
+            "0x7cf655b2ad3f0bab737fa141d2114dc0c5f95591"
+        ],
+        "initialBalanceTotal": 30000000
     }
 ]
