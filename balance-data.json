@@ -833,10 +833,10 @@
         ],
         "initialBalanceTotal": 100041389.75,
         "currentBalances": [
-          101099161.88577548
+          101148539.92358238
         ],
-        "totalBalance": 101099161.88577548,
-        "percentage": 13.683135457307333,
+        "totalBalance": 101148539.92358238,
+        "percentage": 13.732493066123336,
         "lpBalances": [
           0.04336368780011059
         ],
@@ -1096,10 +1096,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          72645168.40602563
+          72680649.1736713
         ],
-        "totalBalance": 72645168.40602563,
-        "percentage": 16.145838362565126,
+        "totalBalance": 72680649.1736713,
+        "percentage": 16.202565376823273,
         "lpBalances": [
           0
         ],
@@ -2117,10 +2117,10 @@
         ],
         "initialBalanceTotal": 20639845,
         "currentBalances": [
-          20226225.47117608
+          5000000
         ],
-        "totalBalance": 20226225.47117608,
-        "percentage": -2.003985634697933,
+        "totalBalance": 5000000,
+        "percentage": -75.77501187630043,
         "lpBalances": [
           0
         ],
@@ -2279,10 +2279,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          20775937.11425843
+          20786084.3300134
         ],
-        "totalBalance": 20775937.11425843,
-        "percentage": 3.8796855712921547,
+        "totalBalance": 20786084.3300134,
+        "percentage": 3.930421650067009,
         "lpBalances": [
           0
         ],
@@ -2298,10 +2298,10 @@
         "initialBalanceTotal": 20000000,
         "currentBalances": [
           15412773.539678661,
-          7707646.7426515175
+          7711411.249351295
         ],
-        "totalBalance": 23120420.282330178,
-        "percentage": 15.60210141165089,
+        "totalBalance": 23124184.789029956,
+        "percentage": 15.620923945149778,
         "lpBalances": [
           0,
           0
@@ -2410,7 +2410,7 @@
         "poolDOGHoldings": 38208831.237335704
       }
     ],
-    "lastUpdate": "2025-12-28T06:56:08.476Z",
+    "lastUpdate": "2025-12-28T07:19:58.251Z",
     "totalUsers": 131,
     "totalAddresses": 191,
     "poolStats": {
