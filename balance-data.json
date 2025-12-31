@@ -378,12 +378,12 @@
         ],
         "initialBalanceTotal": 125545211,
         "currentBalances": [
-          43404582.82143568,
+          43424875.09207695,
           6618163.840339067,
           19191554.56609194
         ],
-        "totalBalance": 69214301.22786668,
-        "percentage": -6.281989478348415,
+        "totalBalance": 69234593.49850795,
+        "percentage": -6.265826161181927,
         "lpBalances": [
           0.04780926955057456,
           0.07260623188751616,
@@ -816,10 +816,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          123687584.33483773
+          123745410.07058117
         ],
-        "totalBalance": 123687584.33483773,
-        "percentage": 23.544350881364057,
+        "totalBalance": 123745410.07058117,
+        "percentage": 23.602109653395047,
         "lpBalances": [
           0
         ],
@@ -1873,10 +1873,10 @@
         ],
         "initialBalanceTotal": 22249621.9321,
         "currentBalances": [
-          20516701.375110354
+          20526293.229930904
         ],
-        "totalBalance": 20516701.375110354,
-        "percentage": -7.788539339131539,
+        "totalBalance": 20526293.229930904,
+        "percentage": -7.745429146743456,
         "lpBalances": [
           0
         ],
@@ -2320,12 +2320,12 @@
         "initialBalanceTotal": 21373976.9876,
         "currentBalances": [
           5645252.987888976,
-          6040729.915541534,
+          6043554.044201433,
           5568916.199723187,
-          5579358.868432466
+          5581967.299450655
         ],
-        "totalBalance": 22834257.971586164,
-        "percentage": 6.832050885211206,
+        "totalBalance": 22839690.53126425,
+        "percentage": 6.857467585534394,
         "lpBalances": [
           0,
           0,
@@ -2410,7 +2410,7 @@
         "poolDOGHoldings": 37669020.01792573
       }
     ],
-    "lastUpdate": "2025-12-31T05:06:58.233Z",
+    "lastUpdate": "2025-12-31T05:41:10.211Z",
     "totalUsers": 131,
     "totalAddresses": 191,
     "poolStats": {
