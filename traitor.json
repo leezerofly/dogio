@@ -326,5 +326,112 @@
             "0x7cf655b2ad3f0bab737fa141d2114dc0c5f95591"
         ],
         "initialBalanceTotal": 30000000
+    },
+    {
+        "nickname": "williams",
+        "addresses": [
+            "0x7f41b8c7510da4e26dd1ddb0895cf3a82795180f"
+        ],
+        "initialBalanceTotal": 179190000
+    },
+    {
+        "nickname": "小小",
+        "addresses": [
+            "0xEA0f8b9271b29bd9333B5a4116db099E88c30C50"
+        ],
+        "initialBalanceTotal": 106600002
+    },
+    {
+        "nickname": "暂停的失忆",
+        "addresses": [
+            "0xc06433b647fF520e5782D33D3e7b7b4D0D405B97"
+        ],
+        "initialBalanceTotal": 33237400
+    },
+    {
+        "nickname": "虚竹",
+        "addresses": [
+            "0xa7e86b6afc20249aA3dEB6760529c8dd890CE7fd"
+        ],
+        "initialBalanceTotal": 30601311
+    },
+    {
+        "nickname": "欧阳锋",
+        "addresses": [
+            "0xbFe7ca9b5388D9f3693BBFdb13E24aB005FB8EFf"
+        ],
+        "initialBalanceTotal": 24000000
+    },
+    {
+        "nickname": "柚子哥",
+        "addresses": [
+            "0x7d51c88e306ecc6ba812cc1bc52c9c040b1ebdf7"
+        ],
+        "initialBalanceTotal": 23561975.2
+    },
+    {
+        "nickname": "是以前",
+        "addresses": [
+            "0xe53052a6a96515e5f7740869bcd58415987c1fbb"
+        ],
+        "initialBalanceTotal": 22866522.69653
+    },
+    {
+        "nickname": "小趴菜",
+        "addresses": [
+            "0xDF015F69988bF2395631415d6D9a121A7adf0B09"
+        ],
+        "initialBalanceTotal": 20000000
+    },
+    {
+        "nickname": "羽辰",
+        "addresses": [
+            "0xf13d79bae5886b189a3c55c0bb81a0dcfdcac8c5",
+            "0x008065ff70b71e21482d3fab61ffb6df6e0b4a89"
+        ],
+        "initialBalanceTotal": 131000000
+    },
+    {
+        "nickname": "旷谷",
+        "addresses": [
+            "0x67c1103a967f3150d1fa5e3d70dae8e70c713950"
+        ],
+        "initialBalanceTotal": 101000000
+    },
+    {
+        "nickname": "草民吃藕",
+        "addresses": [
+            "0xfb31db250165f809997e3b67d6b769e15e1218d2"
+        ],
+        "initialBalanceTotal": 22398645
+    },
+    {
+        "nickname": "可乐",
+        "addresses": [
+            "0x48ec8991cd72d7b63a4ba6f0e550cb2e8782948c"
+        ],
+        "initialBalanceTotal": 40010261.12
+    },
+    {
+        "nickname": "曾经的自己",
+        "addresses": [
+            "0xEA6a7cD780a941c0b9c2Dd7d1B5F7f4C51AA3dCA"
+        ],
+        "initialBalanceTotal": 51700000
+    },
+    {
+        "nickname": "焚石",
+        "addresses": [
+            "0x67514d3219fd78AA1e6d528fBa32A589a167968c",
+            "0x97bbaa519ee28f8cb36fe7d9a4e4683998fc8200"
+        ],
+        "initialBalanceTotal": 200000000
+    },
+    {
+        "nickname": "仙儿",
+        "addresses": [
+            "0xe5814c4063022DFE2B77eDd087DAb456D40c3a14"
+        ],
+        "initialBalanceTotal": 22249621.9321
     }
 ]
