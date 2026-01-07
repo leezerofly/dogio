@@ -265,15 +265,15 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          0
+          28371533.3517085
         ],
-        "totalBalance": 0,
-        "percentage": -45.33504785261862,
+        "totalBalance": 28371533.3517085,
+        "percentage": -45.49904611838759,
         "lpBalances": [
-          0.29404617567394503
+          0.20583232297176152
         ],
-        "totalLPBalance": 0.29404617567394503,
-        "poolDOGHoldings": 95527068.38219249
+        "totalLPBalance": 0.20583232297176152,
+        "poolDOGHoldings": 66868947.86753475
       },
       {
         "nickname": "LV",
@@ -707,10 +707,10 @@
         "initialBalanceTotal": 100177579,
         "currentBalances": [
           36193004.349327065,
-          33514723.305753533
+          33532327.09293825
         ],
-        "totalBalance": 69707727.6550806,
-        "percentage": 14.489632536028246,
+        "totalBalance": 69725331.44226532,
+        "percentage": 14.507205117997627,
         "lpBalances": [
           0.033598757370271994,
           0.10487225914591232
@@ -1141,10 +1141,10 @@
         ],
         "initialBalanceTotal": 49000000,
         "currentBalances": [
-          34611584.40688058
+          34629764.32620935
         ],
-        "totalBalance": 34611584.40688058,
-        "percentage": 16.08261447411456,
+        "totalBalance": 34629764.32620935,
+        "percentage": 16.119716350295743,
         "lpBalances": [
           0.06854689479878529
         ],
@@ -2149,7 +2149,7 @@
         "poolDOGHoldings": 42614973.4758472
       }
     ],
-    "lastUpdate": "2026-01-07T13:34:02.647Z",
+    "lastUpdate": "2026-01-07T14:02:53.451Z",
     "totalUsers": 116,
     "totalAddresses": 174,
     "poolStats": {
@@ -2157,10 +2157,10 @@
       "poolDOGReserve": 13764742373.72796,
       "lpTokenSupply": 42.369874033382445,
       "lpTokenSymbol": "Pot-LP",
-      "totalPoolDOGHoldings": 8976268893.588776,
+      "totalPoolDOGHoldings": 8947610773.074118,
       "usersWithPoolHoldings": 74,
-      "unallocatedDOG": 4788473480.139185,
-      "unallocatedPercent": 34.78796297182207
+      "unallocatedDOG": 4817131600.653843,
+      "unallocatedPercent": 34.99616244070102
     }
   }
 }
