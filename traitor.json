@@ -433,5 +433,98 @@
             "0xe5814c4063022DFE2B77eDd087DAb456D40c3a14"
         ],
         "initialBalanceTotal": 22249621.9321
+    },
+    {
+        "nickname": "成成",
+        "addresses": [
+            "0x983191d9Ad653C0fD00DCA01AA6fa9165bA3Abfc",
+            "0xbE2A9850f49B763782384990C4B3f73Ab489ab49"
+        ],
+        "initialBalanceTotal": 105736479
+    },
+    {
+        "nickname": "锋人院",
+        "addresses": [
+            "0x889015d2d53c53474c276dcfaf614b294edafc97"
+        ],
+        "initialBalanceTotal": 103121334
+    },
+    {
+        "nickname": "☁️",
+        "addresses": [
+            "0x9EEAE0DEAaa932ACC49Cfc935Bb997E6779E1E83"
+        ],
+        "initialBalanceTotal": 100000000
+    },
+    {
+        "nickname": "天雨",
+        "addresses": [
+            "0x1747c3037ec12510610de0ebe7138c8b55d67f73"
+        ],
+        "initialBalanceTotal": 45000000
+    },
+    {
+        "nickname": "卫东",
+        "addresses": [
+            "0x25A5D14ED1a08fa65E50C711CA60De260d339dA4"
+        ],
+        "initialBalanceTotal": 21933408
+    },
+    {
+        "nickname": "东财",
+        "addresses": [
+            "0x54585df5015ad49ab21c92d5fdd9f81f4c3f82e4"
+        ],
+        "initialBalanceTotal": 20639845
+    },
+    {
+        "nickname": "2025国泰民安",
+        "addresses": [
+            "0x359ba4ff0efab569ed1c65d2bd69d08e4aa67a88",
+            "0x6050df3e868d6baea660f6c0ad49930bc5ad66c3"
+        ],
+        "initialBalanceTotal": 205343380
+    },
+    {
+        "nickname": "静慈",
+        "addresses": [
+            "0x288EDeb44D61d6429516095A829b4dD974196f21"
+        ],
+        "initialBalanceTotal": 21926838
+    },
+    {
+        "nickname": "皇总",
+        "addresses": [
+            "0xd1e6245B3EF1D2c5d51263E2d379F9e87FF04B5B"
+        ],
+        "initialBalanceTotal": 41765271.55
+    },
+    {
+        "nickname": "@野火（蒙）",
+        "addresses": [
+            "0x1ac9acbaffe938b4cb7fbb0eb88f641cfb690837"
+        ],
+        "initialBalanceTotal": 102286355
+    },
+    {
+        "nickname": "不正经的正经人",
+        "addresses": [
+            "0xc3584c580db43929bc1ba6767b37ee51f79c8655"
+        ],
+        "initialBalanceTotal": 29501345
+    },
+    {
+        "nickname": "嘟嘟",
+        "addresses": [
+            "0x17b7210d8a802fc6a536936aa40ccf9db920605c"
+        ],
+        "initialBalanceTotal": 21900000
+    },
+    {
+        "nickname": "ゅ 煙誮洅躾︵鈈濄橓間づ",
+        "addresses": [
+            "0xa73c95FEDa4C2dE3009dBA67B2d58981bF4AB073"
+        ],
+        "initialBalanceTotal": 50762682
     }
 ]
