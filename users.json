@@ -127,14 +127,6 @@
         "initialBalanceTotal": 125545211
     },
     {
-        "nickname": "沙漠绿洲",
-        "addresses": [
-            "0x750f9a6ae2b57e0c3ea9f172fe8e48422d4f1c78",
-            "0x6d42ED10e319B544941a345e3Aad989079F258E6"
-        ],
-        "initialBalanceTotal": 120000000
-    },
-    {
         "nickname": "城",
         "addresses": [
             "0x78147ca45b59a3e96076fcbf68c3a99260d67e0b",
@@ -447,33 +439,11 @@
         "initialBalanceTotal": 40000000
     },
     {
-        "nickname": "永恒",
-        "addresses": [
-            "0x681c67Eafdee6B3080C84ed67b2d935655EA4B04"
-        ],
-        "initialBalanceTotal": 40000000
-    },
-    {
         "nickname": "雪狼",
         "addresses": [
             "0xd69dc3f6e449f3679a9e0b904c28f8554140ca60"
         ],
         "initialBalanceTotal": 38000000
-    },
-    {
-        "nickname": "城市/ht 日记",
-        "addresses": [
-            "0x751c303562ec9b4d9b7e9f90cd94506e40b0d62a",
-            "0x1e435da43375a4ed8e72a8c3f8154e01ace90652"
-        ],
-        "initialBalanceTotal": 36577296
-    },
-    {
-        "nickname": "南方种植园",
-        "addresses": [
-            "0xf439bd457304a9f49ecffefb46450993d5bc5769"
-        ],
-        "initialBalanceTotal": 35000000
     },
     {
         "nickname": "我的未来不是梦",
@@ -526,13 +496,6 @@
         "initialBalanceTotal": 27986507
     },
     {
-        "nickname": "细雨飞撒",
-        "addresses": [
-            "0xc51118dd63f361f8a706d8179a3b91e7712485dc"
-        ],
-        "initialBalanceTotal": 27592374
-    },
-    {
         "nickname": "百",
         "addresses": [
             "0x7f17bec72dc1b938dd6e0b3af6442bc1e9d89017"
@@ -581,13 +544,6 @@
             "0x1aa8d6395F769989Cd5a64DAD562863BB1aBB0ff"
         ],
         "initialBalanceTotal": 23803093
-    },
-    {
-        "nickname": "给生活加点糖",
-        "addresses": [
-            "0x5ce24AC37FCAFdf22F0CeEB097c0C266FAD13319"
-        ],
-        "initialBalanceTotal": 22950000
     },
     {
         "nickname": "布朗船长",
@@ -664,13 +620,6 @@
         "initialBalanceTotal": 20838717.2253
     },
     {
-        "nickname": "千与千寻",
-        "addresses": [
-            "0xc878db43b55ced1261c5f000bee169b5a69c98bf"
-        ],
-        "initialBalanceTotal": 20780000
-    },
-    {
         "nickname": "众鑫社区锁先生",
         "addresses": [
             "0x273A16f8968D3f1c31C98609eEDf26be91B89e7E",
@@ -679,25 +628,11 @@
         "initialBalanceTotal": 20270000
     },
     {
-        "nickname": "胡云飞",
-        "addresses": [
-            "0x217796F3fE056844e03c181Ab4E73b4B8629f30c"
-        ],
-        "initialBalanceTotal": 20184078
-    },
-    {
         "nickname": "真善美",
         "addresses": [
             "0xafd4b7762b4c7f70fe022c0db9564d2d33ec1e40"
         ],
         "initialBalanceTotal": 20173002
-    },
-    {
-        "nickname": "喜乐人生",
-        "addresses": [
-            "0xee642b9ac75e47dc55b93a706782abab9a7e4a8e"
-        ],
-        "initialBalanceTotal": 20100000
     },
     {
         "nickname": "逗霸",
