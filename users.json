@@ -710,5 +710,11 @@
             "0xb8558cc872b20c271e4025972c54fc76efd542b8"
         ],
         "initialBalanceTotal": 0
+    }, {
+        "nickname": "隐身对其可见",
+        "addresses": [
+            "0xC8D27BA52c3FA2d2994A061D053dEDA877f9409d"
+        ],
+        "initialBalanceTotal": 0
     }
 ]
