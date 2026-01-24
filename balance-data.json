@@ -108,7 +108,7 @@
           1.4190531868346077
         ],
         "totalLPBalance": 1.4190531868346077,
-        "poolDOGHoldings": 453573658.3054963
+        "poolDOGHoldings": 453573658.3054962
       },
       {
         "nickname": "闲云",
@@ -120,12 +120,12 @@
           1e-18
         ],
         "totalBalance": 1e-18,
-        "percentage": -46.849769333715756,
+        "percentage": -46.84976933371575,
         "lpBalances": [
           0.5023053012214617
         ],
         "totalLPBalance": 0.5023053012214617,
-        "poolDOGHoldings": 160552441.0043249
+        "poolDOGHoldings": 160552441.00432494
       },
       {
         "nickname": "光",
@@ -253,7 +253,7 @@
           0.04772016575777319
         ],
         "totalLPBalance": 0.04772016575777319,
-        "poolDOGHoldings": 15252853.35215597
+        "poolDOGHoldings": 15252853.352155972
       },
       {
         "nickname": "LV",
@@ -756,7 +756,7 @@
           0.08718743000963652
         ],
         "totalLPBalance": 0.08718743000963652,
-        "poolDOGHoldings": 27867821.977791995
+        "poolDOGHoldings": 27867821.97779199
       },
       {
         "nickname": "追梦少年",
@@ -1783,18 +1783,18 @@
         "poolDOGHoldings": 34779928.39253274
       }
     ],
-    "lastUpdate": "2026-01-24T09:53:09.570Z",
+    "lastUpdate": "2026-01-24T10:01:30.279Z",
     "totalUsers": 95,
     "totalAddresses": 150,
     "poolStats": {
       "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646",
-      "poolDOGReserve": 4048390052.7603674,
-      "lpTokenSupply": 12.665816677673476,
+      "poolDOGReserve": 4046426209.396575,
+      "lpTokenSupply": 12.659672585897413,
       "lpTokenSymbol": "Pot-LP",
       "totalPoolDOGHoldings": 1373260781.8605335,
       "usersWithPoolHoldings": 18,
-      "unallocatedDOG": 2675129270.8998337,
-      "unallocatedPercent": 66.07884210850224
+      "unallocatedDOG": 2673165427.5360413,
+      "unallocatedPercent": 66.06237922561
     }
   }
 }
