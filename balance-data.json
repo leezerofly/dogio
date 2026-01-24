@@ -80,11 +80,11 @@
         "initialBalanceTotal": 483285115,
         "currentBalances": [
           106962366.09637585,
-          12077524.636032877,
+          12082815.473578861,
           106466653.82012503
         ],
-        "totalBalance": 225506544.55253375,
-        "percentage": -53.33881852485075,
+        "totalBalance": 225511835.39007974,
+        "percentage": -53.3377237595907,
         "lpBalances": [
           0,
           0,
@@ -100,15 +100,15 @@
         ],
         "initialBalanceTotal": 438322123.05,
         "currentBalances": [
-          224346585.20495245
+          224444865.38835812
         ],
-        "totalBalance": 224346585.20495245,
-        "percentage": 54.62426955763225,
+        "totalBalance": 224444865.38835812,
+        "percentage": 54.646533622109004,
         "lpBalances": [
           1.4190531868346077
         ],
         "totalLPBalance": 1.4190531868346077,
-        "poolDOGHoldings": 453405795.8706161
+        "poolDOGHoldings": 453405104.00730217
       },
       {
         "nickname": "闲云",
@@ -120,12 +120,12 @@
           1e-18
         ],
         "totalBalance": 1e-18,
-        "percentage": -46.86943962754943,
+        "percentage": -46.86952070080855,
         "lpBalances": [
           0.5023053012214617
         ],
         "totalLPBalance": 0.5023053012214617,
-        "poolDOGHoldings": 160493022.37808982
+        "poolDOGHoldings": 160492777.47774813
       },
       {
         "nickname": "光",
@@ -177,12 +177,12 @@
           168581929.01516446
         ],
         "totalBalance": 168581929.01516446,
-        "percentage": -9.977841412072856,
+        "percentage": -9.977878221539815,
         "lpBalances": [
           0.19313776863154158
         ],
         "totalLPBalance": 0.19313776863154158,
-        "poolDOGHoldings": 61710008.13182725
+        "poolDOGHoldings": 61709913.9669729
       },
       {
         "nickname": "旺旺",
@@ -230,13 +230,13 @@
           3.7896088899289366
         ],
         "totalBalance": 3.8132503517495486,
-        "percentage": 23.487827269336446,
+        "percentage": 23.487638836156346,
         "lpBalances": [
           0.5621813045872177,
           0.15749973539042514
         ],
         "totalLPBalance": 0.7196810399776429,
-        "poolDOGHoldings": 229947374.58144855
+        "poolDOGHoldings": 229947023.69896302
       },
       {
         "nickname": "吉姆熊猫",
@@ -248,12 +248,12 @@
           193507.6899441727
         ],
         "totalBalance": 193507.6899441727,
-        "percentage": -91.16411690483899,
+        "percentage": -91.16413021876365,
         "lpBalances": [
           0.04772016575777319
         ],
         "totalLPBalance": 0.04772016575777319,
-        "poolDOGHoldings": 15247208.445191735
+        "poolDOGHoldings": 15247185.179092672
       },
       {
         "nickname": "LV",
@@ -262,10 +262,10 @@
         ],
         "initialBalanceTotal": 150000000,
         "currentBalances": [
-          201206800.38602367
+          201294943.65429026
         ],
-        "totalBalance": 201206800.38602367,
-        "percentage": 34.13786692401578,
+        "totalBalance": 201294943.65429026,
+        "percentage": 34.19662910286017,
         "lpBalances": [
           0
         ],
@@ -280,17 +280,17 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          32863383.934188984,
+          29548943.518640645,
           3.83587823232e-7
         ],
-        "totalBalance": 32863383.934189368,
-        "percentage": 140.18575275239075,
+        "totalBalance": 29548943.51864103,
+        "percentage": -78.89361177239927,
         "lpBalances": [
-          0.9495600083741454,
+          0,
           0
         ],
-        "totalLPBalance": 0.9495600083741454,
-        "poolDOGHoldings": 303396669.9191577
+        "totalLPBalance": 0,
+        "poolDOGHoldings": 0
       },
       {
         "nickname": "zhengch",
@@ -302,11 +302,11 @@
         "initialBalanceTotal": 125545211,
         "currentBalances": [
           50653556.44440076,
-          23540829.717034467,
-          26567112.808237966
+          23551142.319118418,
+          26578751.143258613
         ],
-        "totalBalance": 100761498.96967319,
-        "percentage": -19.740866125372804,
+        "totalBalance": 100783449.90677778,
+        "percentage": -19.723381637569766,
         "lpBalances": [
           0,
           0,
@@ -324,10 +324,10 @@
         "initialBalanceTotal": 120000000,
         "currentBalances": [
           62299366.68497255,
-          40179622.92174073
+          40197224.530012645
         ],
-        "totalBalance": 102478989.60671328,
-        "percentage": -14.6008419944056,
+        "totalBalance": 102496591.21498519,
+        "percentage": -14.58617398751234,
         "lpBalances": [
           0,
           0
@@ -343,11 +343,11 @@
         ],
         "initialBalanceTotal": 119725915,
         "currentBalances": [
-          5689376.778715708,
+          5691869.141114563,
           5728460.607843477
         ],
-        "totalBalance": 11417837.386559185,
-        "percentage": -90.46335341303578,
+        "totalBalance": 11420329.74895804,
+        "percentage": -90.46127168962707,
         "lpBalances": [
           0,
           0
@@ -405,12 +405,12 @@
           63164170.1174332
         ],
         "totalBalance": 63164170.1174332,
-        "percentage": 21.278445666634497,
+        "percentage": 21.278341956148246,
         "lpBalances": [
           0.25202308756922653
         ],
         "totalLPBalance": 0.25202308756922653,
-        "poolDOGHoldings": 80524627.02401392
+        "poolDOGHoldings": 80524504.14945912
       },
       {
         "nickname": "东风（叶军民）",
@@ -424,13 +424,13 @@
           12127537.56827591
         ],
         "totalBalance": 20363503.18700973,
-        "percentage": 19.168565733148284,
+        "percentage": 19.168410224040002,
         "lpBalances": [
           0.32981895165722713,
           0.04655209690680814
         ],
         "totalLPBalance": 0.37637104856403525,
-        "poolDOGHoldings": 120255404.37810525
+        "poolDOGHoldings": 120255220.87735748
       },
       {
         "nickname": "慕兮",
@@ -532,14 +532,14 @@
           0
         ],
         "totalBalance": 27296096.521807715,
-        "percentage": 0.6823341689751582,
+        "percentage": 0.6822198513821441,
         "lpBalances": [
           0.11140662383838332,
           0.09379168167707225,
           0.043203434145761097
         ],
         "totalLPBalance": 0.24840173966121665,
-        "poolDOGHoldings": 79367559.65995114
+        "poolDOGHoldings": 79367438.55099456
       },
       {
         "nickname": "清雅",
@@ -572,12 +572,12 @@
         "initialBalanceTotal": 101000000,
         "currentBalances": [
           9497098.95636581,
-          13338221.294992473,
+          13344064.40971597,
           20092477.37957469,
           24666316.463835362
         ],
-        "totalBalance": 67594114.09476833,
-        "percentage": -6.685974770941179,
+        "totalBalance": 67599957.20949183,
+        "percentage": -6.680229776721706,
         "lpBalances": [
           0.04726123749495429,
           0.03615652613634114,
@@ -585,7 +585,7 @@
           0
         ],
         "totalLPBalance": 0.08341776363129544,
-        "poolDOGHoldings": 26653051.38658108
+        "poolDOGHoldings": 26653010.71601924
       },
       {
         "nickname": "赢在选择",
@@ -597,12 +597,12 @@
           35254258.22566247
         ],
         "totalBalance": 35254258.22566247,
-        "percentage": 21.56597151786314,
+        "percentage": 21.56583965953942,
         "lpBalances": [
           0.2712212668285672
         ],
         "totalLPBalance": 0.2712212668285672,
-        "poolDOGHoldings": 86658692.91182241
+        "poolDOGHoldings": 86658560.67714213
       },
       {
         "nickname": "香香",
@@ -616,13 +616,13 @@
           34074135.42007428
         ],
         "totalBalance": 70871247.73676708,
-        "percentage": 14.910466628875577,
+        "percentage": 14.910399236622224,
         "lpBalances": [
           0.033598757370271994,
           0.10487225914591232
         ],
         "totalLPBalance": 0.13847101651618432,
-        "poolDOGHoldings": 44243275.74964339
+        "poolDOGHoldings": 44243208.237715535
       },
       {
         "nickname": "安德鲁",
@@ -672,14 +672,14 @@
           6871618.63070382
         ],
         "totalBalance": 47789897.972782,
-        "percentage": 32.3576643414895,
+        "percentage": 32.35753529704201,
         "lpBalances": [
           0.08774504956154833,
           0,
           0.17693418165866992
         ],
         "totalLPBalance": 0.26467923122021825,
-        "poolDOGHoldings": 84568428.15702921
+        "poolDOGHoldings": 84568299.1119365
       },
       {
         "nickname": "山河",
@@ -708,12 +708,12 @@
           7740125.151491293
         ],
         "totalBalance": 7740125.151491293,
-        "percentage": 23.491703440152065,
+        "percentage": 23.491526811905846,
         "lpBalances": [
           0.3622751353150594
         ],
         "totalLPBalance": 0.3622751353150594,
-        "poolDOGHoldings": 115751578.28866076
+        "poolDOGHoldings": 115751401.66041455
       },
       {
         "nickname": "墨白",
@@ -726,12 +726,12 @@
         "initialBalanceTotal": 100000000,
         "currentBalances": [
           20121.732861669974,
-          98834611.25312622,
+          98877908.02856816,
           6068.906477642614,
           5264.0366990143
         ],
-        "totalBalance": 98866065.92916454,
-        "percentage": -1.1339340708354562,
+        "totalBalance": 98909362.70460649,
+        "percentage": -1.0906372953935115,
         "lpBalances": [
           0,
           0,
@@ -751,12 +751,12 @@
           86606247.00584413
         ],
         "totalBalance": 86606247.00584413,
-        "percentage": 16.962073498004635,
+        "percentage": 16.96203006172963,
         "lpBalances": [
           0.08718743000963652
         ],
         "totalLPBalance": 0.08718743000963652,
-        "poolDOGHoldings": 27857508.414897982
+        "poolDOGHoldings": 27857465.906424854
       },
       {
         "nickname": "追梦少年",
@@ -765,10 +765,10 @@
         ],
         "initialBalanceTotal": 97554933,
         "currentBalances": [
-          90669856.99081856
+          90709577.00780159
         ],
-        "totalBalance": 90669856.99081856,
-        "percentage": -7.057640036697518,
+        "totalBalance": 90709577.00780159,
+        "percentage": -7.016924497501738,
         "lpBalances": [
           0
         ],
@@ -784,16 +784,16 @@
         "initialBalanceTotal": 94539367,
         "currentBalances": [
           30196364.769649647,
-          0
+          63650990.08006953
         ],
-        "totalBalance": 30196364.769649647,
-        "percentage": -0.0518035504386796,
+        "totalBalance": 93847354.84971917,
+        "percentage": -0.7319830587408452,
         "lpBalances": [
           0,
-          0.2012251396502839
+          0
         ],
-        "totalLPBalance": 0.2012251396502839,
-        "poolDOGHoldings": 64294027.48168211
+        "totalLPBalance": 0,
+        "poolDOGHoldings": 0
       },
       {
         "nickname": "炮兵连长",
@@ -810,18 +810,18 @@
         ],
         "initialBalanceTotal": 92752164.2,
         "currentBalances": [
-          11466618.233870136,
-          11350495.248083927,
+          11471641.449810944,
+          11355467.59367906,
           10671151.786518518,
-          10669405.599845657,
+          10674079.578449897,
           10785248.59300301,
-          10653428.24815179,
+          10658095.227509515,
           10669254.24001897,
           10664461.646487685,
           10676005.54364503
         ],
-        "totalBalance": 97606069.13962471,
-        "percentage": 79.42925898243516,
+        "totalBalance": 97625405.65912262,
+        "percentage": 79.44999327780863,
         "lpBalances": [
           0.09991947795384472,
           0.0999239665661995,
@@ -834,7 +834,7 @@
           0.002217445045966103
         ],
         "totalLPBalance": 0.21538552041722678,
-        "poolDOGHoldings": 68818451.7746068
+        "poolDOGHoldings": 68818346.76279941
       },
       {
         "nickname": "yoke",
@@ -880,12 +880,12 @@
           10450610.285941785
         ],
         "totalBalance": 10450610.285941785,
-        "percentage": -18.454729095734486,
+        "percentage": -18.454831977919216,
         "lpBalances": [
           0.15615297700138708
         ],
         "totalLPBalance": 0.15615297700138708,
-        "poolDOGHoldings": 49892890.183214694
+        "poolDOGHoldings": 49892814.05039799
       },
       {
         "nickname": "丑到拖网速",
@@ -948,12 +948,12 @@
           7210042.294680336
         ],
         "totalBalance": 7210042.294680336,
-        "percentage": -34.13631278157371,
+        "percentage": -34.136393914093205,
         "lpBalances": [
           0.09451542493512065
         ],
         "totalLPBalance": 0.09451542493512065,
-        "poolDOGHoldings": 30198897.308669034
+        "poolDOGHoldings": 30198851.22741167
       },
       {
         "nickname": "阳光",
@@ -1220,10 +1220,10 @@
         ],
         "initialBalanceTotal": 27986507,
         "currentBalances": [
-          30246124.45980429
+          30259374.470525444
         ],
-        "totalBalance": 30246124.45980429,
-        "percentage": 8.073953136789415,
+        "totalBalance": 30259374.470525444,
+        "percentage": 8.121297418521873,
         "lpBalances": [
           0
         ],
@@ -1240,12 +1240,12 @@
           9414114.409057599
         ],
         "totalBalance": 9414114.409057599,
-        "percentage": -19.058200710755415,
+        "percentage": -19.058268970983534,
         "lpBalances": [
           0.036401514573908784
         ],
         "totalLPBalance": 0.036401514573908784,
-        "poolDOGHoldings": 11630753.406145995
+        "poolDOGHoldings": 11630735.658486683
       },
       {
         "nickname": "清",
@@ -1379,10 +1379,10 @@
         ],
         "initialBalanceTotal": 21780000,
         "currentBalances": [
-          13030766.117905974
+          13036474.544815233
         ],
-        "totalBalance": 13030766.117905974,
-        "percentage": -40.17095446324163,
+        "totalBalance": 13036474.544815233,
+        "percentage": -40.14474497330012,
         "lpBalances": [
           0
         ],
@@ -1416,12 +1416,12 @@
           22224737.933545753
         ],
         "totalBalance": 22224737.933545753,
-        "percentage": 8.014323018364921,
+        "percentage": 8.014317355758962,
         "lpBalances": [
           0.002474759138871206
         ],
         "totalLPBalance": 0.002474759138871206,
-        "poolDOGHoldings": 790717.4638400346
+        "poolDOGHoldings": 790716.2572643579
       },
       {
         "nickname": "转运丹",
@@ -1470,12 +1470,12 @@
           5961747.226576648
         ],
         "totalBalance": 5961747.226576648,
-        "percentage": 28.05380581708609,
+        "percentage": 28.053653736466632,
         "lpBalances": [
           0.06550456065633715
         ],
         "totalLPBalance": 0.06550456065633715,
-        "poolDOGHoldings": 20929551.99501143
+        "poolDOGHoldings": 20929520.058081344
       },
       {
         "nickname": "追梦人",
@@ -1491,14 +1491,14 @@
           84059.72102006082
         ],
         "totalBalance": 3667449.615195931,
-        "percentage": 177.70585132214808,
+        "percentage": 177.70545430056623,
         "lpBalances": [
           0.037700716131608684,
           0,
           0.13274300817611767
         ],
         "totalLPBalance": 0.17044372430772636,
-        "poolDOGHoldings": 54458968.266919255
+        "poolDOGHoldings": 54458885.16660911
       },
       {
         "nickname": "未来不是梦",
@@ -1603,13 +1603,13 @@
           8598481.581433676
         ],
         "totalBalance": 8974590.827401266,
-        "percentage": -5.602899169565001,
+        "percentage": -5.602974818561755,
         "lpBalances": [
           0.03106790527003388,
           0
         ],
         "totalLPBalance": 0.03106790527003388,
-        "poolDOGHoldings": 9926596.441683903
+        "poolDOGHoldings": 9926581.294440588
       },
       {
         "nickname": "魔虫",
@@ -1618,15 +1618,15 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          38437036.16156971
+          38453874.38961797
         ],
-        "totalBalance": 38437036.16156971,
-        "percentage": 257.8939764147178,
+        "totalBalance": 38453874.38961797,
+        "percentage": 257.9779146957378,
         "lpBalances": [
           0.10372588821495998
         ],
         "totalLPBalance": 0.10372588821495998,
-        "poolDOGHoldings": 33141759.12137385
+        "poolDOGHoldings": 33141708.549529586
       },
       {
         "nickname": "三好",
@@ -1676,12 +1676,12 @@
         "initialBalanceTotal": 21373976.9876,
         "currentBalances": [
           5782167.540172598,
-          6187237.517031772,
+          6189947.9787818035,
           5701314.467042694,
           5714678.926239861
         ],
-        "totalBalance": 23385398.45048693,
-        "percentage": 9.410609284616733,
+        "totalBalance": 23388108.91223696,
+        "percentage": 9.42329041434567,
         "lpBalances": [
           0,
           0,
@@ -1698,15 +1698,15 @@
         ],
         "initialBalanceTotal": 50000000,
         "currentBalances": [
-          38437036.16156971
+          38453874.38961797
         ],
-        "totalBalance": 38437036.16156971,
-        "percentage": 43.15759056588712,
+        "totalBalance": 38453874.38961797,
+        "percentage": 43.19116587829512,
         "lpBalances": [
           0.10372588821495998
         ],
         "totalLPBalance": 0.10372588821495998,
-        "poolDOGHoldings": 33141759.12137385
+        "poolDOGHoldings": 33141708.549529586
       },
       {
         "nickname": "太阳",
@@ -1718,12 +1718,12 @@
           0
         ],
         "totalBalance": 0,
-        "percentage": 59.834436581156844,
+        "percentage": 59.8341926857678,
         "lpBalances": [
           0.4502196747282325
         ],
         "totalLPBalance": 0.4502196747282325,
-        "poolDOGHoldings": 143850992.92304116
+        "poolDOGHoldings": 143850773.41719103
       },
       {
         "nickname": "风雨同舟",
@@ -1743,7 +1743,7 @@
           0.10538140945041348
         ],
         "totalLPBalance": 0.1872902945419228,
-        "poolDOGHoldings": 59841664.74059014
+        "poolDOGHoldings": 59841573.426687986
       },
       {
         "nickname": "M丶張",
@@ -1780,21 +1780,21 @@
           0.10881268636209288
         ],
         "totalLPBalance": 0.10881268636209288,
-        "poolDOGHoldings": 34767056.73793371
+        "poolDOGHoldings": 34767003.68600692
       }
     ],
-    "lastUpdate": "2026-01-24T01:28:31.068Z",
+    "lastUpdate": "2026-01-24T03:12:39.676Z",
     "totalUsers": 95,
     "totalAddresses": 150,
     "poolStats": {
       "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646",
-      "poolDOGReserve": 5245487137.269147,
-      "lpTokenSupply": 16.417137377674457,
+      "poolDOGReserve": 4860911172.276431,
+      "lpTokenSupply": 15.21352853987221,
       "lpTokenSymbol": "Pot-LP",
-      "totalPoolDOGHoldings": 2505764292.2631216,
-      "usersWithPoolHoldings": 29,
-      "unallocatedDOG": 2739722845.0060253,
-      "unallocatedPercent": 52.23009366547322
+      "totalPoolDOGHoldings": 2138070332.321979,
+      "usersWithPoolHoldings": 27,
+      "unallocatedDOG": 2722840839.954452,
+      "unallocatedPercent": 56.01502976404542
     }
   }
 }
