@@ -10,7 +10,7 @@ const { getAddressTokenBalances, getSpecificTokenBalance, getLPTokenMaxSupply, c
 const DOG_CONTRACT = '0x903358faf7c6304afbd560e9e29b12ab1b8fddc5';
 
 // 池子地址（LP代币合约地址）
-const POOL_ADDRESS = '0x41027D3CaCc14F35Abd387B7350c05247e9Ac646';
+const POOL_ADDRESS = '0x1e3876FE7b8a24203AFB91A84F45d4AaFB281A1c';
 
 // OKX API配置
 const OKX_CONFIG = {
