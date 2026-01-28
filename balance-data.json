@@ -668,11 +668,11 @@
         "initialBalanceTotal": 100000500,
         "currentBalances": [
           34383335.64983528,
-          6387905.448989251,
+          6390729.396515131,
           6309700.64969443
         ],
-        "totalBalance": 47080941.74851896,
-        "percentage": 32.521203931895286,
+        "totalBalance": 47083765.69604484,
+        "percentage": 32.52402786530149,
         "lpBalances": [
           0.08977826450506614,
           0,
@@ -1524,10 +1524,10 @@
         ],
         "initialBalanceTotal": 20838717.2253,
         "currentBalances": [
-          29741107.908251256
+          29754255.774756975
         ],
-        "totalBalance": 29741107.908251256,
-        "percentage": 42.720435172194705,
+        "totalBalance": 29754255.774756975,
+        "percentage": 42.78352862638178,
         "lpBalances": [
           0
         ],
@@ -1783,7 +1783,7 @@
         "poolDOGHoldings": 35136362.15615354
       }
     ],
-    "lastUpdate": "2026-01-28T13:39:36.508Z",
+    "lastUpdate": "2026-01-28T14:08:08.674Z",
     "totalUsers": 95,
     "totalAddresses": 150,
     "poolStats": {
