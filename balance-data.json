@@ -79,12 +79,12 @@
         ],
         "initialBalanceTotal": 483285115,
         "currentBalances": [
-          108335120.99490853,
+          108380140.19224055,
           12218157.025326874,
           5525318.956923058
         ],
-        "totalBalance": 126078596.97715846,
-        "percentage": -11.22797167136347,
+        "totalBalance": 126123616.17449048,
+        "percentage": -11.218656425365872,
         "lpBalances": [
           0.1849739844610647,
           0.5425964422493454,
@@ -421,10 +421,10 @@
         "initialBalanceTotal": 118000000,
         "currentBalances": [
           8331864.754057074,
-          16107588.886806354
+          16114282.47533036
         ],
-        "totalBalance": 24439453.640863426,
-        "percentage": -79.28859860943777,
+        "totalBalance": 24446147.229387432,
+        "percentage": -79.28292607679032,
         "lpBalances": [
           0,
           0
@@ -550,10 +550,10 @@
         "initialBalanceTotal": 101701252,
         "currentBalances": [
           5270088.792001699,
-          93668197.60425399
+          93707121.88876076
         ],
-        "totalBalance": 98938286.39625569,
-        "percentage": 423.3151364657016,
+        "totalBalance": 98977210.68076245,
+        "percentage": 423.3534096272816,
         "lpBalances": [
           0.8505378020754348,
           0.2680055628857051
@@ -877,10 +877,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          10048596.9053507
+          10052772.649678463
         ],
-        "totalBalance": 10048596.9053507,
-        "percentage": -2.9977703788451446,
+        "totalBalance": 10052772.649678463,
+        "percentage": -2.9921274811049168,
         "lpBalances": [
           0.15936838812945964
         ],
@@ -911,10 +911,10 @@
         ],
         "initialBalanceTotal": 59806199.9428,
         "currentBalances": [
-          65412507.047610275
+          65439689.53963793
         ],
-        "totalBalance": 65412507.047610275,
-        "percentage": 9.374123602857686,
+        "totalBalance": 65439689.53963793,
+        "percentage": 9.419574562881317,
         "lpBalances": [
           0
         ],
@@ -1203,10 +1203,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          69803355.52414075
+          69832362.6550501
         ],
-        "totalBalance": 69803355.52414075,
-        "percentage": 140.29306745532045,
+        "totalBalance": 69832362.6550501,
+        "percentage": 140.39292243237634,
         "lpBalances": [
           0
         ],
@@ -1271,10 +1271,10 @@
         ],
         "initialBalanceTotal": 25000000,
         "currentBalances": [
-          73599454.48124498
+          73630039.09992073
         ],
-        "totalBalance": 73599454.48124498,
-        "percentage": 194.39781792497993,
+        "totalBalance": 73630039.09992073,
+        "percentage": 194.52015639968295,
         "lpBalances": [
           0
         ],
@@ -1543,10 +1543,10 @@
         "initialBalanceTotal": 20270000,
         "currentBalances": [
           11473064.627314404,
-          14816139.611750055
+          14822296.532116733
         ],
-        "totalBalance": 26289204.23906446,
-        "percentage": 29.69513684787597,
+        "totalBalance": 26295361.159431137,
+        "percentage": 29.72551139334552,
         "lpBalances": [
           0,
           0
@@ -1561,10 +1561,10 @@
         ],
         "initialBalanceTotal": 20173002,
         "currentBalances": [
-          18761687.588410426
+          18769484.100825492
         ],
-        "totalBalance": 18761687.588410426,
-        "percentage": 153.6790158603236,
+        "totalBalance": 18769484.100825492,
+        "percentage": 153.71766411116434,
         "lpBalances": [
           0.08367649060287223
         ],
@@ -1783,7 +1783,7 @@
         "poolDOGHoldings": 43137455.70296161
       }
     ],
-    "lastUpdate": "2026-02-06T14:09:39.177Z",
+    "lastUpdate": "2026-02-06T14:58:21.052Z",
     "totalUsers": 95,
     "totalAddresses": 150,
     "poolStats": {
