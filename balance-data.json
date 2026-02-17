@@ -420,11 +420,11 @@
         ],
         "initialBalanceTotal": 118000000,
         "currentBalances": [
-          155003667.33521545,
+          159668675.12067184,
           16776306.950849725
         ],
-        "totalBalance": 171779974.28606516,
-        "percentage": 45.576249394970475,
+        "totalBalance": 176444982.07152155,
+        "percentage": 49.52964582332335,
         "lpBalances": [
           0,
           0
@@ -527,12 +527,12 @@
         ],
         "initialBalanceTotal": 105940786,
         "currentBalances": [
-          22077181.468016017,
+          22104655.513456397,
           4989613.6775514055,
           13949189.745646521
         ],
-        "totalBalance": 41015984.891213946,
-        "percentage": 16.311882919013936,
+        "totalBalance": 41043458.93665432,
+        "percentage": 16.33781631678991,
         "lpBalances": [
           0.11396142712636098,
           0.09593627320677495,
@@ -594,10 +594,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          35354673.02469274
+          35398670.30281528
         ],
-        "totalBalance": 35354673.02469274,
-        "percentage": 43.5509186125938,
+        "totalBalance": 35398670.30281528,
+        "percentage": 43.59479066891927,
         "lpBalances": [
           0.27730600174545367
         ],
@@ -1542,11 +1542,11 @@
         ],
         "initialBalanceTotal": 20270000,
         "currentBalances": [
-          11569701.435583102,
+          11584099.401348496,
           14959528.363258991
         ],
-        "totalBalance": 26529229.798842095,
-        "percentage": 30.87927873133742,
+        "totalBalance": 26543627.76460749,
+        "percentage": 30.950309642858855,
         "lpBalances": [
           0,
           0
@@ -1783,7 +1783,7 @@
         "poolDOGHoldings": 43614751.61276368
       }
     ],
-    "lastUpdate": "2026-02-17T16:38:12.571Z",
+    "lastUpdate": "2026-02-17T17:40:28.276Z",
     "totalUsers": 95,
     "totalAddresses": 150,
     "poolStats": {
